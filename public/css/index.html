@@ -16,43 +16,123 @@
         color: #000;
     }
 
-
-    swiper-slide {
-        display: flex;
-        color: #F5F5F5;
-        font-family: Inter, sans-serif;
-        font-size: 60px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-
-    swiper-slide p {
-        color: #F5F5F5;
-        font-family: Inter;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        letter-spacing: 0.32px;
-    }
-
-    swiper-slide img {
-        display: block;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
-
     .swiper {
         width: 100%;
         height: 100%;
     }
 
     .swiper-slide {
-        background: #fff;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .swiper-button-next {
+        position: absolute;
+        top: 470px;
+        right: 45px;
+        border: 2px solid;
+        display: flex;
+        width: 60px;
+        height: 60px;
+        padding: 10.8px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        border-radius: 300px;
+        color: rgba(0, 0, 0, 0);
+        background: rgba(0, 0, 0, 0.20);
+        backdrop-filter: blur(7.5px);
+    }
+
+    .swiper-button-prev {
+        position: absolute;
+        top: 470px;
+        left: 60px;
+        border: 2px solid;
+        display: flex;
+        width: 60px;
+        height: 60px;
+        padding: 10.8px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        border-radius: 300px;
+        color: rgba(0, 0, 0, 0);
+        background: rgba(0, 0, 0, 0.20);
+        backdrop-filter: blur(7.5px);
+
+    }
+
+    .swiper-button-prev1 {
+        position: relative;
+        top: -240px;
+        left: 10px;
+        z-index: 1;
+        border: 2px solid;
+        display: flex;
+        width: 60px;
+        height: 60px;
+        padding: 10.8px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        border-radius: 300px;
+        color: rgba(0, 0, 0, 0);
+        background: rgba(0, 0, 0, 0.20);
+        backdrop-filter: blur(7.5px);
+    }
+
+    .swiper-button-next1 {
+        border: 2px solid;
+        position: relative;
+        top: -170px;
+        right: -1100px;
+        z-index: 1;
+        display: flex;
+        width: 60px;
+        height: 60px;
+        padding: 10.8px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        border-radius: 300px;
+        color: rgba(0, 0, 0, 0);
+        background: rgba(0, 0, 0, 0.20);
+        backdrop-filter: blur(7.5px);
+    }
+
+    body {
+        position: relative;
+        height: 100%;
+
+    }
+
+    body {
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .swiper-slide {
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .swiper-slide img {
+        display: block;
+
+        object-fit: cover;
     }
 </style>
 
@@ -84,66 +164,83 @@
     </header>
 
 
-    <div class="bg-[url('./img/sweper-img.png')] pt-[50px]  object-cover bg-center bg-cover bg-no-repeat">
-        <swiper-container class="mySwiper" navigation="true">
-            <swiper-slide>
-                <div>
-
-                    <h2 class="mt-[115px] ml-[180px] mr-[30px] max-w-[589px]">Take your career to
-                        the next level.</h2>
-                    <p class="mt-[16px] ml-[180px] text-[32px] font-sans">With indispensable courses</p>
-                    <button
-                        class="ml-[180px] text-[16px] pt-[12px] rounded-[5px] pb-[12px] pl-[24px] pr-[24px] border-2 border-white">Exams</button>
-                    <button
-                        class="text-[16px] pt-[12px] rounded-[5px] pb-[12px] pl-[24px] pr-[24px] border-2 border-white bg-white text-black">Our
-                        Courses</button>
-                </div>
-                <img src="./img/swe.png" alt="">
-            </swiper-slide>
-            <swiper-slide>
-                <div>
-
-                    <h2 class="mt-[115px] ml-[180px] mr-[30px] max-w-[589px]">Take your career to
-                        the next level.</h2>
-                    <p class="mt-[16px] ml-[180px] text-[32px] font-sans">With indispensable courses</p>
-                    <button
-                        class="ml-[180px] text-[16px] pt-[12px] rounded-[5px] pb-[12px] pl-[24px] pr-[24px] border-2 border-white">Exams</button>
-                    <button
-                        class="text-[16px] pt-[12px] rounded-[5px] pb-[12px] pl-[24px] pr-[24px] border-2 border-white bg-white text-black">Our
-                        Courses</button>
-                </div>
-                <img src="./img/swe.png" alt="">
-            </swiper-slide>
-            <swiper-slide>
-                <div>
-
-                    <h2 class="mt-[115px] ml-[180px] mr-[30px] max-w-[589px]">Take your career to
-                        the next level.</h2>
-                    <p class="mt-[16px] ml-[180px] text-[32px] font-sans">With indispensable courses</p>
-                    <button
-                        class="ml-[180px] text-[16px] pt-[12px] rounded-[5px] pb-[12px] pl-[24px] pr-[24px] border-2 border-white">Exams</button>
-                    <button
-                        class="text-[16px] pt-[12px] rounded-[5px] pb-[12px] pl-[24px] pr-[24px] border-2 border-white bg-white text-black">Our
-                        Courses</button>
-                </div>
-                <img src="./img/swe.png" alt="">
-            </swiper-slide>
-            <swiper-slide>
-                <div>
-
-                    <h2 class="mt-[115px] ml-[180px] mr-[30px] max-w-[589px]">Take your career to
-                        the next level.</h2>
-                    <p class="mt-[16px] ml-[180px] text-[32px] font-sans">With indispensable courses</p>
-                    <button
-                        class="ml-[180px] text-[16px] pt-[12px] rounded-[5px] pb-[12px] pl-[24px] pr-[24px] border-2 border-white">Exams</button>
-                    <button
-                        class="text-[16px] pt-[12px] rounded-[5px] pb-[12px] pl-[24px] pr-[24px] border-2 border-white bg-white text-black">Our
-                        Courses</button>
+    <div class="bg-[url('./img/sweper-img.png')] pt-[50px] object-cover bg-center bg-cover bg-no-repeat">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div>
+                        <h1 class="max-w-[589px] text-white  font-[700] text-[60px]">Take your career to the next level.
+                        </h1>
+                        <p class="mb-[28px] text-[32px] text-white ">With indispensable courses</p>
+                        <button
+                            class="pt-[12px] pb-[12px] pl-[24px] pr-[24px] border-2 rounded-[5px] mr-[32px] text-white">Exams</button>
+                        <button
+                            class="pt-[12px] pb-[12px] pl-[24px] pr-[24px] border-2 rounded-[5px] bg-white text-black">Our
+                            courses</button>
+                    </div>
+                    <img class="h-[521px] w-[781px] rounded-[10px]" src="./img/swe.png" alt="">
 
                 </div>
-                <img src="./img/swe.png" alt="">
-            </swiper-slide>
-        </swiper-container>
+                <div class="swiper-slide">
+                    <div>
+                        <h1 class="max-w-[589px] text-white  font-[700] text-[60px]">Take your career to the next level.
+                        </h1>
+                        <p class="mb-[28px] text-[32px] text-white ">With indispensable courses</p>
+                        <button
+                            class="pt-[12px] pb-[12px] pl-[24px] pr-[24px] border-2 rounded-[5px] mr-[32px] text-white">Exams</button>
+                        <button
+                            class="pt-[12px] pb-[12px] pl-[24px] pr-[24px] border-2 rounded-[5px] bg-white text-black">Our
+                            courses</button>
+                    </div>
+                    <img class="h-[521px] w-[781px] rounded-[10px]" src="./img/swe.png" alt="">
+
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <h1 class="max-w-[589px] text-white  font-[700] text-[60px]">Take your career to the next level.
+                        </h1>
+                        <p class="mb-[28px] text-[32px] text-white ">With indispensable courses</p>
+                        <button
+                            class="pt-[12px] pb-[12px] pl-[24px] pr-[24px] border-2 rounded-[5px] mr-[32px] text-white">Exams</button>
+                        <button
+                            class="pt-[12px] pb-[12px] pl-[24px] pr-[24px] border-2 rounded-[5px] bg-white text-black">Our
+                            courses</button>
+                    </div>
+                    <img class="h-[521px] w-[781px] rounded-[10px]" src="./img/swe.png" alt="">
+
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <h1 class="max-w-[589px] text-white  font-[700] text-[60px]">Take your career to the next level.
+                        </h1>
+                        <p class="mb-[28px] text-[32px] text-white ">With indispensable courses</p>
+                        <button
+                            class="pt-[12px] pb-[12px] pl-[24px] pr-[24px] border-2 rounded-[5px] mr-[32px] text-white">Exams</button>
+                        <button
+                            class="pt-[12px] pb-[12px] pl-[24px] pr-[24px] border-2 rounded-[5px] bg-white text-black">Our
+                            courses</button>
+                    </div>
+                    <img class="h-[521px] w-[781px] rounded-[10px]" src="./img/swe.png" alt="">
+
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <h1 class="max-w-[589px] text-white  font-[700] text-[60px]">Take your career to the next level.
+                        </h1>
+                        <p class="mb-[28px] text-[32px] text-white ">With indispensable courses</p>
+                        <button
+                            class="pt-[12px] pb-[12px] pl-[24px] pr-[24px] border-2 rounded-[5px] mr-[32px] text-white">Exams</button>
+                        <button
+                            class="pt-[12px] pb-[12px] pl-[24px] pr-[24px] border-2 rounded-[5px] bg-white text-black">Our
+                            courses</button>
+                    </div>
+                    <img class="h-[521px] w-[781px] rounded-[10px]" src="./img/swe.png" alt="">
+
+                </div>
+            </div>
+            <div class="swiper-button-next"><img class="ml-[28px]" src="./img/slider-btn.png" alt=""></div>
+            <div class="swiper-button-prev"><img class="ml-[20px]" src="./img/left-btn.png" alt=""></div>
+        </div>
     </div>
     <section class="max-w-[1222px] mx-auto pl-[20px] pt-[134px] pr-[20px]  p-[38px]">
         <div class="text-center mb-[108px]">
@@ -214,7 +311,7 @@
         <div class="text-center">
             <h2 class="mb-[100px] font-[700] text-[60px]">Trending Courses</h2>
         </div>
-        <div class="swiper mb-[200px]">
+        <div class="swiper mySwiper1 mb-[200px]">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <h5 class="absolute ml-[-80px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">Game <br>
@@ -222,11 +319,13 @@
                 </div>
                 <div class="swiper-slide">
                     <h5 class="absolute ml-[-110px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">Marketing
-                        <br> Strategy</h5><img class="rounded-[10px]" src="./img/sweper2.png" alt="">
+                        <br> Strategy
+                    </h5><img class="rounded-[10px]" src="./img/sweper2.png" alt="">
                 </div>
                 <div class="swiper-slide">
                     <h5 class="absolute ml-[-80px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">Data Analysis
-                        <br> With Python</h5><img class="rounded-[10px]" src="./img/sweper3.png" alt="">
+                        <br> With Python
+                    </h5><img class="rounded-[10px]" src="./img/sweper3.png" alt="">
                 </div>
                 <div class="swiper-slide">
                     <h5 class="absolute ml-[-80px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">Advanced <br>
@@ -238,19 +337,21 @@
                 </div>
                 <div class="swiper-slide">
                     <h5 class="absolute ml-[-100px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">Marketing
-                        <br> Strategy</h5><img class="rounded-[10px]" src="./img/sweper2.png" alt="">
+                        <br> Strategy
+                    </h5><img class="rounded-[10px]" src="./img/sweper2.png" alt="">
                 </div>
                 <div class="swiper-slide">
                     <h5 class="absolute ml-[-80px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">Data Analysis
-                        <br> With</h5><img class="rounded-[10px]" src="./img/sweper3.png" alt="">
+                        <br> With
+                    </h5><img class="rounded-[10px]" src="./img/sweper3.png" alt="">
                 </div>
                 <div class="swiper-slide">
                     <h5 class="absolute ml-[-80px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">Advanced <br>
                         UX Designs</h5><img class="rounded-[10px]" src="./img/sweper4.png" alt="">
                 </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next1"><img class="" src="./img/slider-btn.png" alt=""></div>
+            <div class="swiper-button-prev1"><img class="" src="./img/left-btn.png" alt=""></div>
         </div>
         <div class="flex">
             <div class="mt-[60px]">
@@ -277,7 +378,7 @@
         <div class="text-center">
             <h2 class="mb-[100px] font-[700] text-[60px]">Test your ability here</h2>
         </div>
-        <div class="swiper mb-[200px]">
+        <div class="swiper mySwiper1 mb-[200px]">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <h5 class="absolute ml-[-80px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">Game <br>
@@ -285,11 +386,13 @@
                 </div>
                 <div class="swiper-slide">
                     <h5 class="absolute ml-[-110px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">Marketing
-                        <br> Strategy</h5><img class="rounded-[10px]" src="./img/sweper2.png" alt="">
+                        <br> Strategy
+                    </h5><img class="rounded-[10px]" src="./img/sweper2.png" alt="">
                 </div>
                 <div class="swiper-slide">
                     <h5 class="absolute ml-[-80px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">Data Analysis
-                        <br> With Python</h5><img class="rounded-[10px]" src="./img/sweper3.png" alt="">
+                        <br> With Python
+                    </h5><img class="rounded-[10px]" src="./img/sweper3.png" alt="">
                 </div>
                 <div class="swiper-slide">
                     <h5 class="absolute ml-[-80px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">Advanced <br>
@@ -301,19 +404,21 @@
                 </div>
                 <div class="swiper-slide">
                     <h5 class="absolute ml-[-100px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">Marketing
-                        <br> Strategy</h5><img class="rounded-[10px]" src="./img/sweper2.png" alt="">
+                        <br> Strategy
+                    </h5><img class="rounded-[10px]" src="./img/sweper2.png" alt="">
                 </div>
                 <div class="swiper-slide">
                     <h5 class="absolute ml-[-80px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">Data Analysis
-                        <br> With</h5><img class="rounded-[10px]" src="./img/sweper3.png" alt="">
+                        <br> With
+                    </h5><img class="rounded-[10px]" src="./img/sweper3.png" alt="">
                 </div>
                 <div class="swiper-slide">
                     <h5 class="absolute ml-[-80px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">Advanced <br>
                         UX Designs</h5><img class="rounded-[10px]" src="./img/sweper4.png" alt="">
                 </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next1"><img class="" src="./img/slider-btn.png" alt=""></div>
+            <div class="swiper-button-prev1"><img class="" src="./img/left-btn.png" alt=""></div>
         </div>
         <div class="flex">
             <div class="mt-[60px]">
@@ -332,65 +437,173 @@
             </div>
         </div>
     </section>
-    <section class="max-w-[1222px] mx-auto pl-[20px] pt-[132px] pr-[20px] mb-[150px] p-[38px]">
+    <div class="bg-[#FCFCFC]">
+        <section class="max-w-[1222px] mx-auto pl-[20px] pt-[132px] pr-[20px] mb-[100px]  p-[38px]">
 
-        <div class="text-center">
-            <h2 class="mb-[100px] font-[700] text-[60px]">Recent Publications</h2>
-        </div>
-        <div class="swiper mb-[200px]">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <h5 class="absolute ml-[-100px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">NATURE <br>
-                        of Science</h5><img class="rounded-[10px]" src="./img/sweper5.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <h5 class="absolute ml-[-110px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">2022 <br>
-                        Astro Report</h5><img class="rounded-[10px]" src="./img/sweper6.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <h5 class="absolute ml-[-80px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">Data Analysis
-                        <br> With Python</h5><img class="rounded-[10px]" src="./img/sweper3.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <h5 class="absolute ml-[-80px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">Advanced <br>
-                        UX Designs</h5><img class="rounded-[10px]" src="./img/sweper4.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <h5 class="absolute ml-[-80px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">
+            <div class="text-center">
+                <h2 class="mb-[100px] font-[700] text-[60px]">Recent Publications</h2>
+            </div>
+            <div class="swiper mySwiper1 mb-[200px]">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
                         <h5 class="absolute ml-[-100px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">NATURE
-                            <br> of Science</h5><img class="rounded-[10px]" src="./img/sweper5.png" alt="">
+                            <br>
+                            of Science
+                        </h5><img class="rounded-[10px]" src="./img/sweper5.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <h5 class="absolute ml-[-110px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">2022
+                            <br>
+                            Astro Report
+                        </h5><img class="rounded-[10px]" src="./img/sweper6.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <h5 class="absolute ml-[-80px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">Data
+                            Analysis
+                            <br> With Python
+                        </h5><img class="rounded-[10px]" src="./img/sweper3.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <h5 class="absolute ml-[-80px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">Advanced
+                            <br>
+                            UX Designs
+                        </h5><img class="rounded-[10px]" src="./img/sweper4.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <h5 class="absolute ml-[-80px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">
+                            <h5 class="absolute ml-[-100px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">
+                                NATURE
+                                <br> of Science
+                            </h5><img class="rounded-[10px]" src="./img/sweper5.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <h5 class="absolute ml-[-110px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">2022
+                            <br>
+                            Astro Report
+                        </h5><img class="rounded-[10px]" src="./img/sweper6.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <h5 class="absolute ml-[-80px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">Data
+                            Analysis
+                            <br> With
+                        </h5><img class="rounded-[10px]" src="./img/sweper3.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <h5 class="absolute ml-[-80px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">Advanced
+                            <br>
+                            UX Designs
+                        </h5><img class="rounded-[10px]" src="./img/sweper4.png" alt="">
+                    </div>
                 </div>
-                <div class="swiper-slide">
-                    <h5 class="absolute ml-[-110px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">2022 <br>
-                        Astro Report</h5><img class="rounded-[10px]" src="./img/sweper6.png" alt="">
+                <div class="swiper-button-next1"><img class="" src="./img/slider-btn.png" alt=""></div>
+                <div class="swiper-button-prev1"><img class="" src="./img/left-btn.png" alt=""></div>
+            </div>
+
+
+        </section>
+    </div>
+
+    <section class="max-w-[1222px] mx-auto pl-[20px] pr-[20px] mb-[150px] p-[38px]">
+        <div class="text-center">
+            <h2 class=" mb-[85px] font-[700] text-[60px]">Notable Intructors</h2>
+        </div>
+        <div class="flex gap-[20px] justify-between pt-[79px]">
+            <div class="w-[311px] h-[311px] text-center items-center">
+                <img class="mt-[74px] mb-[33px] ml-[100px] w-[85px] h-57px] rounded-[45px]" src="./img/card-img1.png"
+                    alt="">
+                <h4 class="text-[22px] uppercase font-[300]">data analyst</h4>
+                <h5 class="text-[36px] ">Prof. W.J Khatam</h5>
+            </div>
+            <div class="w-[311px] h-[311px] text-center items-center">
+                <img class="mt-[74px] mb-[33px] ml-[100px] w-[85px] h-57px] rounded-[45px]" src="./img/card-img2.png"
+                    alt="">
+                <h4 class="text-[22px] uppercase font-[300]">ux designer</h4>
+                <h5 class="text-[36px] ">Prof. Kaif Kofi O</h5>
+            </div>
+            <div class="w-[311px] h-[311px] text-center items-center">
+                <img class="mt-[74px] mb-[33px] ml-[100px] w-[85px] h-57px] rounded-[45px]" src="./img/card-img3.png"
+                    alt="">
+                <h4 class="text-[22px] uppercase font-[300]">software dev.</h4>
+                <h5 class="text-[36px] ">Prof. Maryam J</h5>
+            </div>
+            <div class="w-[311px] h-[311px] text-center items-center">
+                <img class="mt-[74px] mb-[33px] ml-[100px] w-[85px] h-57px] rounded-[45px]" src="./img/card-img4.png"
+                    alt="">
+                <h4 class="text-[22px] uppercase font-[300]">psycologist</h4>
+                <h5 class="text-[36px] ">Mr. Oluwole B.O</h5>
+            </div>
+
+        </div>
+    </section>
+    <div class="bg-[#F4F9FA]">
+        <section class="max-w-[1222px] mx-auto pl-[20px] pb-[94px] pr-[20px] mb-[150px] p-[56px]">
+            <div class="text-center">
+                <h2 class="mb-[22px] text-[42px] font-[700]">Get In Touch</h2>
+                <p class="max-w-[856px] mb-[86px]  ml-[170px] text-[24px] font-[400]">Lorem ipsum dolor sit at, consectetur
+                    adipielit. Facilisi fermentum, dignissim pharetra. Aliquam
+                    Lorem ipsum dolor sit at, consectetur adipielit. Facilisi fermentum, dignissim pharetra. Aliquam</p>
+            </div>
+            <div class="flex">
+                <div class="w-[317px] h-[428px] ml-[270px] border-[2px] rounded-[10px] border-[rgba(0, 0, 0, 0.10)] ">
+                    <div class="flex gap-[34px] ml-[24px] mt-[39px] mb-[34px] items-start">
+                        <div>
+                            <img class=" " src="./img/input-icon.png" alt="">
+                        </div>
+                        <div>
+
+                            <a class="text-[22px] font-[600]" href="info@column9.com">info@column9.com</a>
+                            <p class="text-[18px] font-[400]">lorem ispum lorem <br> ispum lorem ispum </p>
+                        </div>
+                    </div>
+                    <div class="flex gap-[34px] ml-[24px]  mb-[34px] items-start">
+                        <div>
+                            <img class="" src="./img/input-icon2.png" alt="">
+                        </div>
+                        <div>
+
+                            <a class="text-[22px] font-[600]" href="+234 80XXXXXXX">+234 80XXXXXXX</a>
+                            <p class="text-[18px] font-[400]">lorem ispum lorem <br> ispum lorem ispum </p>
+                        </div>
+                    </div>
+                    <div class="flex gap-[34px] mb-[38px] ml-[24px]  items-start">
+                        <div>
+                            <img class="" src="./img/input-icon3.png" alt="">
+                        </div>
+                        <div>
+                            <p class="text-[18px] font-[400]">lorem ispum lorem <br> ispum lorem ispum </p>
+                            <a class="text-[22px] font-[600]" href="">Support center --></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="swiper-slide">
-                    <h5 class="absolute ml-[-80px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">Data Analysis
-                        <br> With</h5><img class="rounded-[10px]" src="./img/sweper3.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <h5 class="absolute ml-[-80px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">Advanced <br>
-                        UX Designs</h5><img class="rounded-[10px]" src="./img/sweper4.png" alt="">
+                <div class="ml-[131px]">
+                    <form action="">
+                        <input class="w-[497px] h-[60px] pl-[15px] mb-[24px] border-[1px] border-[rgba(0, 0, 0, 0.10)] rounded-[5px]" placeholder="NAME" type="text">
+                        <input class="w-[497px] h-[60px] pl-[15px] mb-[24px] border-[1px] border-[rgba(0, 0, 0, 0.10)] rounded-[5px]" placeholder="Email" type="email">
+                        <input class="w-[497px] h-[84px] pl-[15px] border-[1px] border-[rgba(0, 0, 0, 0.10)] rounded-[5px]" placeholder="Subject" type="text"> <br>
+                        <textarea  class="w-[497px] h-[155px] mb-[46px] pt-[10px] pl-[15px] border-[1px] border-[rgba(0, 0, 0, 0.10)] rounded-[5px]" placeholder="Input Text" id="" cols="30" rows="10"></textarea>
+                        <button class="w-[288px] h-[60px] text-[22px] font-[400] ml-[205px] text-white bg-[#1B353D] rounded-[3px]">Send</button>
+                    </form>
+
                 </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-
-
-    </section>
-
-
+        </section>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper('.swiper', {
-            slidesPerView: 3,
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+        var swiper = new Swiper('.mySwiper1', {
+            slidesPerView: 4,
             direction: getDirection(),
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-button-next1',
+                prevEl: '.swiper-button-prev1',
             },
             on: {
                 resize: function () {
@@ -399,9 +612,11 @@
             },
         });
 
+
+
         function getDirection() {
             var windowWidth = window.innerWidth;
-            var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+            var direction = window.innerWidth <= 1200 ? 'vertical' : 'horizontal';
 
             return direction;
         }
