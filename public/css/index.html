@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Column9</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -13,6 +13,7 @@
 
 </head>
 <style>
+
     body {
         font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
         font-size: 14px;
@@ -149,16 +150,18 @@
                     </a>
                 </div>
                 <ul class="flex gap-[24px]">
-                    <li><a href="#">Home</a></li>
+                    <li><a target="_blank" href="./fountain.html">Home</a></li>
                     <li><a href="#">Courses</a></li>
                     <li><a href="#">Instructors</a></li>
                     <li><a href="#">Schedules</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
-                <form action="">
-                    <input class="rounded-[5px] w-[286px] h-[45px] border-gray-300 border-[1px]" type="text">
+                <form class="flex" action="">
+                    <input class="outline-none w-[286px] h-[45px] border-gray-300 border-[2px] border-r-0" type="text">
+                    <button class="border-2 border-l-0">
+                        <img class="" src="./img/search-btn.png" alt="">
+                    </button>
                 </form>
-                <img class="absolute left-[1170px] z-[1]" src="./img/search-btn.png" alt="">
                 <a href="#">
                     <img src="./img/user.png" alt="">
                 </a>
@@ -195,7 +198,7 @@
                             class="pt-[12px] pb-[12px] pl-[24px] pr-[24px] border-2 rounded-[5px] bg-white text-black">Our
                             courses</button>
                     </div>
-                    <img class="h-[521px] w-[781px] rounded-[10px]" src="./img/swe.png" alt="">
+                    <img class="h-[521px] w-[781px] rounded-[10px]" src="./img/women2.png" alt="">
 
                 </div>
                 <div class="swiper-slide">
@@ -209,7 +212,7 @@
                             class="pt-[12px] pb-[12px] pl-[24px] pr-[24px] border-2 rounded-[5px] bg-white text-black">Our
                             courses</button>
                     </div>
-                    <img class="h-[521px] w-[781px] rounded-[10px]" src="./img/swe.png" alt="">
+                    <img class="h-[521px] w-[781px] rounded-[10px]" src="./img/women.png" alt="">
 
                 </div>
                 <div class="swiper-slide">
@@ -223,7 +226,7 @@
                             class="pt-[12px] pb-[12px] pl-[24px] pr-[24px] border-2 rounded-[5px] bg-white text-black">Our
                             courses</button>
                     </div>
-                    <img class="h-[521px] w-[781px] rounded-[10px]" src="./img/swe.png" alt="">
+                    <img class="h-[521px] w-[781px] rounded-[10px]" src="./img/book.png" alt="">
 
                 </div>
                 <div class="swiper-slide">
@@ -237,7 +240,7 @@
                             class="pt-[12px] pb-[12px] pl-[24px] pr-[24px] border-2 rounded-[5px] bg-white text-black">Our
                             courses</button>
                     </div>
-                    <img class="h-[521px] w-[781px] rounded-[10px]" src="./img/swe.png" alt="">
+                    <img class="h-[521px] w-[781px] rounded-[10px]" src="./img/sweper1.png" alt="">
 
                 </div>
             </div>
@@ -262,7 +265,7 @@
             <div class="w-[604px] ml-[59px] rounded-[10px] shadow-md shadow-gray-400 pt-[37px] pr-[39px] pb-[48px] ">
                 <form action="">
                     <h6 class=" ml-[40px] mb-[63px] text-[24px]">Registration for enrolment</h6>
-                    <input placeholder="Full name"
+                    <input placeholder="Full name" required
                         class="w-[524px] ml-[40px] mb-[32px] pt-[19px] pb-[19px] pl-[17px]  border border-gray-300 rounded-[6px]"
                         type="text">
                     <input placeholder="Email"
@@ -282,9 +285,11 @@
                         <option value=""><img class="w-[24px]" src="./img/snow.png" alt="">List of courses goes here
                         </option>
                     </select>
-                    <button
-                        class="ml-[335px] pt-[16px] pl-[80px] pb-[16px] pr-[80px]  text-white border rounded-[5px] bg-[#1B353D]">Apply
-                        Now</button>
+                    <div class="text-right">
+                        <button
+                            class=" pt-[16px] pl-[80px] pb-[16px] pr-[80px]  text-white border rounded-[5px] bg-[#1B353D]">Apply
+                            Now</button>
+                    </div>
                 </form>
             </div>
         </div>
@@ -294,7 +299,7 @@
             <h3 class="mb-[185px] text-[60px]">What we offer</h3>
         </div>
         <div class="flex">
-            <div class="mt-[60px]">
+            <div class="">
                 <img class="max-w-[826px] h-[551px] rounded-[10px]" src="./img/women.png" alt="">
             </div>
             <div class="ml-[109px]">
@@ -357,7 +362,7 @@
             <div class="swiper-button-prev1"><img class="" src="./img/left-btn.png" alt=""></div>
         </div>
         <div class="flex">
-            <div class="mt-[60px]">
+            <div class="">
                 <div class="">
                     <h4 class="mb-[23px] text-[#0F756B] font-[800] text-[48px]">Online Exams</h4>
                     <h5 class="max-w-[536px] mb-[16px] mr-[71px] text-[48px] text-gray-600">Our exams prepare you for
@@ -372,7 +377,7 @@
                         our courses</button>
                 </div>
             </div>
-            <div class="mt-[60px]">
+            <div class="">
                 <img class="max-w-[826px] h-[551px] rounded-[10px]" src="./img/women2.png" alt="">
             </div>
         </div>
@@ -424,7 +429,7 @@
             <div class="swiper-button-prev1"><img class="" src="./img/left-btn.png" alt=""></div>
         </div>
         <div class="flex">
-            <div class="mt-[60px]">
+            <div class="">
                 <img class="max-w-[826px] h-[551px] rounded-[10px]" src="./img/book.png" alt="">
             </div>
             <div class="ml-[109px]">
@@ -591,7 +596,7 @@
                             class="w-[497px] h-[84px] pl-[15px] border-[1px] border-[rgba(0, 0, 0, 0.10)] rounded-[5px]"
                             placeholder="Subject" type="text"> <br>
                         <textarea
-                            class="w-[497px] h-[155px] mb-[46px] pt-[10px] pl-[15px] border-[1px] border-[rgba(0, 0, 0, 0.10)] rounded-[5px]"
+                            class="w-[497px] h-[155px] mb-[46px] pt-[10px] pl-[15px] border-[1px] resize-none border-[rgba(0, 0, 0, 0.10)] rounded-[5px]"
                             placeholder="Input Text" id="" cols="30" rows="10"></textarea>
                         <button
                             class="w-[288px] h-[60px] text-[22px] font-[400] ml-[205px] text-white bg-[#1B353D] rounded-[3px]">Send</button>
@@ -642,7 +647,8 @@
             <div class="text-center">
                 <h6 class=" mb-[17px] text-white text-[24px] font-[400]">Subscribe to get latest updates</h6>
                 <form action="">
-                    <input class="w-[545px] mb-[63px] pl-[18px]  pt-[19px] pb-[19px]" placeholder="Your Email address" type="email"><button
+                    <input class="w-[545px] mb-[63px] pl-[18px]  pt-[19px] pb-[19px]" placeholder="Your Email address"
+                        type="email"><button
                         class="w-[126px] pt-[19px] pb-[19px] text-white bg-[#3B7586]">Subscribe</button>
                 </form>
             </div>
