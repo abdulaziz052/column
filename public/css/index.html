@@ -13,7 +13,6 @@
 
 </head>
 <style>
-
     body {
         font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
         font-size: 14px;
@@ -141,15 +140,16 @@
 </style>
 
 <body>
-    <header class="">
+    <header class="fixed bg-white z-10 w-[767px] shadow-md md:">
         <div class=" max-w-[1222px] mx-auto pl-[20px] pr-[20px] p-[38px]">
-            <nav class="flex items-center justify-between">
-                <div class="">
-                    <a href="#">
-                        <img src="./img/logo.png" alt="">
+            <nav class=" flex items-center md:flex items-center justify-between">
+                <div class=" md:">
+                    <a class=" md:" href="#">
+                        <img class="flex ml-[300px] mb-[-20px]  md:" src="./img/logo.png" alt="">
                     </a>
+                    <img class=" md:hidden" src="./img/hamburger-menu.png" alt="">
                 </div>
-                <ul class="flex gap-[24px]">
+                <ul class="md:flex gap-[24px] hidden">
                     <li><a target="_blank" href="./fountain.html">Home</a></li>
                     <li><a href="#">Courses</a></li>
                     <li><a href="#">Instructors</a></li>
@@ -157,9 +157,11 @@
                     <li><a href="#">Contact Us</a></li>
                 </ul>
                 <form class="flex" action="">
-                    <input class="outline-none w-[286px] h-[45px] border-gray-300 border-[2px] border-r-0" type="text">
-                    <button class="border-2 border-l-0">
-                        <img class="" src="./img/search-btn.png" alt="">
+                    <input
+                        class="hidden border-0  md:outline-none w-[286px] h-[45px] border-gray-300 border-[2px] border-r-0"
+                        type="text">
+                    <button class="border-0 md:border-2 border-l-0">
+                        <img class="ml-[50px] md:" src="./img/search-btn.png" alt="">
                     </button>
                 </form>
                 <a href="#">
@@ -170,7 +172,13 @@
     </header>
 
 
-    <div class="bg-[url('./img/sweper-img.png')] pt-[50px] object-cover bg-center bg-cover bg-no-repeat">
+    <div class=" md:bg-[url('./img/sweper-img.png')] pt-[50px] object-cover bg-center bg-cover bg-no-repeat">
+       <div class="md:hidden">
+        <h1>
+            Take your career to
+            the next level.
+        </h1>
+       </div>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
