@@ -705,6 +705,15 @@ video {
 .mt-\[76px\] {
   margin-top: 76px;
 }
+.ml-\[16px\] {
+  margin-left: 16px;
+}
+.mb-\[54px\] {
+  margin-bottom: 54px;
+}
+.ml-\[50px\] {
+  margin-left: 50px;
+}
 .block {
   display: block;
 }
@@ -792,6 +801,12 @@ video {
 .w-\[969px\] {
   width: 969px;
 }
+.w-\[\] {
+  width: ;
+}
+.w-\[480px\] {
+  width: 480px;
+}
 .max-w-\[1222px\] {
   max-width: 1222px;
 }
@@ -821,6 +836,9 @@ video {
 }
 .max-w-\[856px\] {
   max-width: 856px;
+}
+.max-w-\[\] {
+  max-width: ;
 }
 .flex-shrink {
   flex-shrink: 1;
@@ -861,6 +879,12 @@ video {
 .gap-\[34px\] {
   gap: 34px;
 }
+.gap-0 {
+  gap: 0px;
+}
+.gap-\[48px\] {
+  gap: 48px;
+}
 .scroll-smooth {
   scroll-behavior: smooth;
 }
@@ -884,6 +908,12 @@ video {
 }
 .rounded-\[6px\] {
   border-radius: 6px;
+}
+.rounded {
+  border-radius: 0.25rem;
+}
+.rounded-\[30px\] {
+  border-radius: 30px;
 }
 .rounded-t-lg {
   border-top-left-radius: 0.5rem;
@@ -918,6 +948,23 @@ video {
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+.border-\[\] {
+  border-color: ;
+}
+.border-\[\#F\] {
+  border-color: #F;
+}
+.border-\[\#F7\] {
+  border-color: #F7;
+}
+.border-\[\#F77\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 119 119 / var(--tw-border-opacity));
+}
+.border-\[\#F77E23\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(247 126 35 / var(--tw-border-opacity));
 }
 .bg-\[\#1B353D\] {
   --tw-bg-opacity: 1;
@@ -989,6 +1036,9 @@ video {
 }
 .p-\[56px\] {
   padding: 56px;
+}
+.p-\[15px\] {
+  padding: 15px;
 }
 .pb-\[112px\] {
   padding-bottom: 112px;
@@ -1125,11 +1175,26 @@ video {
 .pt-\[8px\] {
   padding-top: 8px;
 }
+.pt-\[59px\] {
+  padding-top: 59px;
+}
+.pl-\[48px\] {
+  padding-left: 48px;
+}
+.pl-\[48\] {
+  padding-left: 48;
+}
+.pr-\[48px\] {
+  padding-right: 48px;
+}
 .text-center {
   text-align: center;
 }
 .text-right {
   text-align: right;
+}
+.font-\[\] {
+  font-family: ;
 }
 .text-\[16px\] {
   font-size: 16px;
@@ -1218,6 +1283,26 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-\[\] {
+  color: ;
+}
+.text-\[\#000\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.text-\[\#\] {
+  color: #;
+}
+.text-\[\#77\] {
+  color: #77;
+}
+.text-\[\#77E\] {
+  --tw-text-opacity: 1;
+  color: rgb(119 119 238 / var(--tw-text-opacity));
+}
+.text-\[\#77E23\] {
+  color: #77E23;
 }
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
