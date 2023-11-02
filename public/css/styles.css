@@ -720,6 +720,15 @@ video {
 .mt-\[74px\] {
   margin-top: 74px;
 }
+.mt-\[100px\] {
+  margin-top: 100px;
+}
+.ml-\[\] {
+  margin-left: ;
+}
+.ml-\[15px\] {
+  margin-left: 15px;
+}
 .block {
   display: block;
 }
@@ -764,6 +773,24 @@ video {
 }
 .h-\[84px\] {
   height: 84px;
+}
+.h-0 {
+  height: 0px;
+}
+.h-\[\] {
+  height: ;
+}
+.h-\[36\] {
+  height: 36;
+}
+.h-\[366\] {
+  height: 366;
+}
+.h-\[366px\] {
+  height: 366px;
+}
+.h-\[380px\] {
+  height: 380px;
 }
 .w-\[126px\] {
   width: 126px;
@@ -816,6 +843,24 @@ video {
 .w-\[969px\] {
   width: 969px;
 }
+.w-0 {
+  width: 0px;
+}
+.w-\[\] {
+  width: ;
+}
+.w-\[549px\] {
+  width: 549px;
+}
+.w-\[560px\] {
+  width: 560px;
+}
+.w-\[580px\] {
+  width: 580px;
+}
+.w-\[600px\] {
+  width: 600px;
+}
 .max-w-\[1222px\] {
   max-width: 1222px;
 }
@@ -846,6 +891,12 @@ video {
 .max-w-\[856px\] {
   max-width: 856px;
 }
+.max-w-\[\] {
+  max-width: ;
+}
+.max-w-\[301px\] {
+  max-width: 301px;
+}
 .flex-shrink {
   flex-shrink: 1;
 }
@@ -857,6 +908,15 @@ video {
 }
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+.flex-col {
+  flex-direction: column;
 }
 .items-start {
   align-items: flex-start;
@@ -952,6 +1012,10 @@ video {
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+.border-\[\#0F756B\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(15 117 107 / var(--tw-border-opacity));
 }
 .bg-\[\#000\] {
   --tw-bg-opacity: 1;
@@ -1178,6 +1242,9 @@ video {
 .text-right {
   text-align: right;
 }
+.font-\[\] {
+  font-family: ;
+}
 .text-\[16px\] {
   font-size: 16px;
 }
@@ -1270,6 +1337,9 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.text-\[\] {
+  color: ;
+}
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -1297,6 +1367,42 @@ video {
 
 @media (min-width: 768px) {
 
+  .md\:static {
+    position: static;
+  }
+
+  .md\:fixed {
+    position: fixed;
+  }
+
+  .md\:z-10 {
+    z-index: 10;
+  }
+
+  .md\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .md\:mb-\[\] {
+    margin-bottom: ;
+  }
+
+  .md\:mb-\[-0px\] {
+    margin-bottom: -0px;
+  }
+
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .md\:block {
+    display: block;
+  }
+
+  .md\:inline-block {
+    display: inline-block;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -1305,12 +1411,86 @@ video {
     display: none;
   }
 
+  .md\:h-\[45px\] {
+    height: 45px;
+  }
+
+  .md\:h-\[521px\] {
+    height: 521px;
+  }
+
+  .md\:w-\[767px\] {
+    width: 767px;
+  }
+
+  .md\:w-full {
+    width: 100%;
+  }
+
+  .md\:w-\[286px\] {
+    width: 286px;
+  }
+
+  .md\:w-\[781px\] {
+    width: 781px;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:items-center {
+    align-items: center;
+  }
+
   .md\:border-2 {
     border-width: 2px;
   }
 
+  .md\:border-\[2px\] {
+    border-width: 2px;
+  }
+
+  .md\:border-l-0 {
+    border-left-width: 0px;
+  }
+
+  .md\:border-r-0 {
+    border-right-width: 0px;
+  }
+
+  .md\:border-gray-300 {
+    --tw-border-opacity: 1;
+    border-color: rgb(209 213 219 / var(--tw-border-opacity));
+  }
+
+  .md\:border-white {
+    --tw-border-opacity: 1;
+    border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  }
+
+  .md\:bg-white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
   .md\:bg-\[url\(\'\.\/img\/sweper-img\.png\'\)\] {
     background-image: url('./img/sweper-img.png');
+  }
+
+  .md\:pt-\[12px\] {
+    padding-top: 12px;
+  }
+
+  .md\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+
+  .md\:shadow-md {
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 
   .md\:outline-none {

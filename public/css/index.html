@@ -140,12 +140,12 @@
 </style>
 
 <body>
-    <header class="fixed bg-white z-10 w-[767px] shadow-md md:">
+    <header class="fixed bg-white z-10 w-[767px] shadow-md md:w-full md:static">
         <div class=" max-w-[1222px] mx-auto pl-[20px] pr-[20px] p-[38px]">
             <nav class=" flex items-center md:flex items-center justify-between">
                 <div class=" md:">
                     <a class=" md:" href="#">
-                        <img class="flex ml-[300px] mb-[-20px]  md:" src="./img/logo.png" alt="">
+                        <img class="md:flex ml-[300px] mb-[-20px]  md:ml-0 md:mb-[-0px]" src="./img/logo.png" alt="">
                     </a>
                     <img class=" md:hidden" src="./img/hamburger-menu.png" alt="">
                 </div>
@@ -157,11 +157,11 @@
                     <li><a href="#">Contact Us</a></li>
                 </ul>
                 <form class="flex" action="">
-                    <input
-                        class="hidden border-0  md:outline-none w-[286px] h-[45px] border-gray-300 border-[2px] border-r-0"
+                    <input required
+                        class="hidden border-0 w-0 h-0 md:w-[286px] md:block md:outline-none md:h-[45px] md:border-gray-300 md:border-[2px] md:border-r-0"
                         type="text">
-                    <button class="border-0 md:border-2 border-l-0">
-                        <img class="ml-[50px] md:" src="./img/search-btn.png" alt="">
+                    <button class="border-0 md:border-gray-300 md:border-2 md:border-l-0">
+                        <img class="ml-[50px] md:ml-0" src="./img/search-btn.png" alt="">
                     </button>
                 </form>
                 <a href="#">
@@ -172,91 +172,72 @@
     </header>
 
 
-    <div class=" md:bg-[url('./img/sweper-img.png')] pt-[50px] object-cover bg-center bg-cover bg-no-repeat">
-       <div class="md:hidden">
-        <h1>
-            Take your career to
-            the next level.
-        </h1>
-       </div>
+    <div class=" md:bg-[url('./img/sweper-img.png')] pt-[50px] object-cover bg-center bg-cover bg-no-repeat " >
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div>
-                        <h1 class="max-w-[589px] text-white  font-[700] text-[60px]">Take your career to the next level.
+                <div class="swiper-slide flex-col md:flex-row  md:flex">
+                    <div class="">
+                        <h1 class="text-black mt-[100px] md:mt-0 max-w-[589px] md:text-white  font-[700] text-[60px]">Take your career to the next level.
                         </h1>
-                        <p class="mb-[28px] text-[32px] text-white ">With indispensable courses</p>
+                        <p class="text-black mb-[28px] text-[32px] md:text-white ">With indispensable courses</p>
                         <button
-                            class="pt-[12px] pb-[12px] pl-[24px] pr-[24px] border-2 rounded-[5px] mr-[32px] text-white">Exams</button>
+                            class="hidden md:inline-block md:border-white pt-[12px] pb-[12px] pl-[24px] pr-[24px] md:pt-[12px] pb-[12px] pl-[24px] pr-[24px] md:border-2 rounded-[5px] mr-[32px] text-white">Exams</button>
                         <button
-                            class="pt-[12px] pb-[12px] pl-[24px] pr-[24px] border-2 rounded-[5px] bg-white text-black">Our
+                            class="hidden md:inline-block md:bg-white md:border-white pt-[12px] pb-[12px] pl-[24px] pr-[24px] md:pt-[12px] pb-[12px] pl-[24px] pr-[24px] md:border-2 rounded-[5px] bg-white text-black">Our
                             courses</button>
                     </div>
-                    <img class="h-[521px] w-[781px] rounded-[10px]" src="./img/swe.png" alt="">
+                    <img class="w-[600px] h-[380px] md:h-[521px] md:w-[781px] rounded-[10px]" src="./img/swe.png" alt="">
 
                 </div>
-                <div class="swiper-slide">
-                    <div>
-                        <h1 class="max-w-[589px] text-white  font-[700] text-[60px]">Take your career to the next level.
+                <div class="swiper-slide flex-col md:flex-row">
+                    <div> 
+                        <h1 class="text-black max-w-[589px] mt-[100px] md:mt-0 md:text-white  font-[700] text-[60px]">Take your career to the next level.
                         </h1>
-                        <p class="mb-[28px] text-[32px] text-white ">With indispensable courses</p>
+                        <p class="mb-[28px] text-[32px] text-black md:text-white ">With indispensable courses</p>
                         <button
-                            class="pt-[12px] pb-[12px] pl-[24px] pr-[24px] border-2 rounded-[5px] mr-[32px] text-white">Exams</button>
+                            class="hidden md:inline-block pt-[12px] pb-[12px] pl-[24px] pr-[24px] border-2 rounded-[5px] mr-[32px] text-white">Exams</button>
                         <button
-                            class="pt-[12px] pb-[12px] pl-[24px] pr-[24px] border-2 rounded-[5px] bg-white text-black">Our
+                            class="hidden md:inline-block pt-[12px] pb-[12px] pl-[24px] pr-[24px] border-2 rounded-[5px] bg-white text-black">Our
                             courses</button>
                     </div>
                     <img class="h-[521px] w-[781px] rounded-[10px]" src="./img/women2.png" alt="">
 
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide flex-col md:flex-row">
                     <div>
-                        <h1 class="max-w-[589px] text-white  font-[700] text-[60px]">Take your career to the next level.
+                        <h1 class="text-black mt-[100px] md:mt-0 max-w-[589px] md:text-white  font-[700] text-[60px]">Take your career to the next level.
                         </h1>
-                        <p class="mb-[28px] text-[32px] text-white ">With indispensable courses</p>
+                        <p class="mb-[28px] text-black text-[32px] md:text-white ">With indispensable courses</p>
                         <button
-                            class="pt-[12px] pb-[12px] pl-[24px] pr-[24px] border-2 rounded-[5px] mr-[32px] text-white">Exams</button>
+                            class="hidden md:inline-block pt-[12px] pb-[12px] pl-[24px] pr-[24px] border-2 rounded-[5px] mr-[32px] text-white">Exams</button>
                         <button
-                            class="pt-[12px] pb-[12px] pl-[24px] pr-[24px] border-2 rounded-[5px] bg-white text-black">Our
+                            class="hidden md:inline-block pt-[12px] pb-[12px] pl-[24px] pr-[24px] border-2 rounded-[5px] bg-white text-black">Our
                             courses</button>
                     </div>
                     <img class="h-[521px] w-[781px] rounded-[10px]" src="./img/women.png" alt="">
 
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide flex-col md:flex-row">
                     <div>
-                        <h1 class="max-w-[589px] text-white  font-[700] text-[60px]">Take your career to the next level.
+                        <h1 class="max-w-[589px] text-black  mt-[100px] md:mt-0  md:text-white  font-[700] text-[60px]">Take your career to the next level.
                         </h1>
-                        <p class="mb-[28px] text-[32px] text-white ">With indispensable courses</p>
+                        <p class="mb-[28px] text-[32px] text-black md:text-white ">With indispensable courses</p>
                         <button
-                            class="pt-[12px] pb-[12px] pl-[24px] pr-[24px] border-2 rounded-[5px] mr-[32px] text-white">Exams</button>
+                            class="hidden md:inline-block pt-[12px] pb-[12px] pl-[24px] pr-[24px] border-2 rounded-[5px] mr-[32px] text-white">Exams</button>
                         <button
-                            class="pt-[12px] pb-[12px] pl-[24px] pr-[24px] border-2 rounded-[5px] bg-white text-black">Our
+                            class="hidden md:inline-block pt-[12px] pb-[12px] pl-[24px] pr-[24px] border-2 rounded-[5px] bg-white text-black">Our
                             courses</button>
                     </div>
                     <img class="h-[521px] w-[781px] rounded-[10px]" src="./img/book.png" alt="">
 
                 </div>
-                <div class="swiper-slide">
-                    <div>
-                        <h1 class="max-w-[589px] text-white  font-[700] text-[60px]">Take your career to the next level.
-                        </h1>
-                        <p class="mb-[28px] text-[32px] text-white ">With indispensable courses</p>
-                        <button
-                            class="pt-[12px] pb-[12px] pl-[24px] pr-[24px] border-2 rounded-[5px] mr-[32px] text-white">Exams</button>
-                        <button
-                            class="pt-[12px] pb-[12px] pl-[24px] pr-[24px] border-2 rounded-[5px] bg-white text-black">Our
-                            courses</button>
-                    </div>
-                    <img class="h-[521px] w-[781px] rounded-[10px]" src="./img/sweper1.png" alt="">
-
-                </div>
+                
             </div>
             <div class="swiper-button-next"><img class="ml-[28px]" src="./img/slider-btn.png" alt=""></div>
             <div class="swiper-button-prev"><img class="ml-[20px]" src="./img/left-btn.png" alt=""></div>
         </div>
     </div>
-    <section class="max-w-[1222px] mx-auto pl-[20px] pt-[134px] pr-[20px]  p-[38px]">
+    <section class="max-w-[1222px] mx-auto pl-[20px] pt-[134px] pr-[20px]  p-[38px]" hidden>
         <div class="text-center mb-[108px]">
             <h2 class=" font-[700] text-[60px]">Enrol for a couse now</h2>
         </div>
@@ -302,7 +283,7 @@
             </div>
         </div>
     </section>
-    <section class="max-w-[1222px] mx-auto pl-[20px] pt-[132px] pr-[20px] mb-[150px] p-[38px]">
+    <section class="max-w-[1222px] mx-auto pl-[20px] pt-[132px] pr-[20px] mb-[150px] p-[38px]" hidden>
         <div class="text-center">
             <h3 class="mb-[185px] text-[60px]">What we offer</h3>
         </div>
@@ -323,7 +304,7 @@
             </div>
         </div>
     </section>
-    <section class="max-w-[1222px] mx-auto pl-[20px] pt-[132px] pr-[20px] mb-[150px] p-[38px]">
+    <section class="max-w-[1222px] mx-auto pl-[20px] pt-[132px] pr-[20px] mb-[150px] p-[38px]" hidden>
         <div class="text-center">
             <h2 class="mb-[100px] font-[700] text-[60px]">Trending Courses</h2>
         </div>
@@ -390,7 +371,7 @@
             </div>
         </div>
     </section>
-    <section class="max-w-[1222px] mx-auto pl-[20px] pt-[132px] pr-[20px] mb-[150px] p-[38px]">
+    <section class="max-w-[1222px] mx-auto pl-[20px] pt-[132px] pr-[20px] mb-[150px] p-[38px]" hidden>
         <div class="text-center">
             <h2 class="mb-[100px] font-[700] text-[60px]">Test your ability here</h2>
         </div>
@@ -453,7 +434,7 @@
             </div>
         </div>
     </section>
-    <div class="bg-[#FCFCFC]">
+    <div class="bg-[#FCFCFC]" hidden>
         <section class="max-w-[1222px] mx-auto pl-[20px] pt-[132px] pr-[20px] mb-[100px]  p-[38px]">
 
             <div class="text-center">
@@ -519,7 +500,7 @@
         </section>
     </div>
 
-    <section class="max-w-[1222px] mx-auto pl-[20px] pr-[20px] mb-[150px] p-[38px]">
+    <section class="max-w-[1222px] mx-auto pl-[20px] pr-[20px] mb-[150px] p-[38px]" hidden>
         <div class="text-center">
             <h2 class=" mb-[85px] font-[700] text-[60px]">Notable Intructors</h2>
         </div>
@@ -551,7 +532,7 @@
 
         </div>
     </section>
-    <div class="bg-[#F4F9FA]">
+    <div class="bg-[#F4F9FA]" hidden>
         <section class="max-w-[1222px] mx-auto pl-[20px] pb-[94px] pr-[20px]  p-[56px]">
             <div class="text-center">
                 <h2 class="mb-[22px] text-[42px] font-[700]">Get In Touch</h2>
@@ -614,7 +595,7 @@
             </div>
         </section>
     </div>
-    <div class="bg-[#1B353D]">
+    <div class="bg-[#1B353D]" hidden>
         <section class="max-w-[1222px] mx-auto pl-[20px] pt-[75px] pb-[29px]  pr-[20px] ">
             <div class="flex mb-[64px] justify-between">
                 <div>
