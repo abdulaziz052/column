@@ -915,6 +915,9 @@ video {
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
 .flex-col {
   flex-direction: column;
 }
@@ -1418,14 +1421,6 @@ video {
 
   .md\:mt-0 {
     margin-top: 0px;
-  }
-
-  .md\:ml-\[\] {
-    margin-left: ;
-  }
-
-  .md\:ml-\[0\] {
-    margin-left: 0;
   }
 
   .md\:block {
