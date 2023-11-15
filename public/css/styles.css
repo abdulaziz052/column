@@ -786,6 +786,9 @@ video {
 .ml-\[155px\] {
   margin-left: 155px;
 }
+.mb-\[15px\] {
+  margin-bottom: 15px;
+}
 .block {
   display: block;
 }
@@ -1507,6 +1510,10 @@ video {
 
   .md\:ml-\[220px\] {
     margin-left: 220px;
+  }
+
+  .md\:mb-\[63px\] {
+    margin-bottom: 63px;
   }
 
   .md\:block {
