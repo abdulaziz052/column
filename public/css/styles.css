@@ -921,6 +921,9 @@ video {
 .flex-col {
   flex-direction: column;
 }
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
 .items-start {
   align-items: flex-start;
 }
