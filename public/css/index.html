@@ -86,6 +86,8 @@
         backdrop-filter: blur(7.5px);
     }
 
+  
+
     .swiper-button-next1 {
         border: 2px solid;
         position: relative;
@@ -103,6 +105,19 @@
         color: rgba(0, 0, 0, 0);
         background: rgba(0, 0, 0, 0.20);
         backdrop-filter: blur(7.5px);
+    }
+    @media (max-width: 768px) {
+        .swiper-button-next1 {
+            display: flex;
+            position: relative;
+            top: -188px;
+            right: -570px ;
+            z-index: 1;
+            
+            
+        }
+
+
     }
 
     body {
@@ -145,7 +160,8 @@
             <nav class=" flex items-center md:flex items-center justify-between">
                 <div class="">
                     <a class=" md:" href="#">
-                        <img class="hidden md:block md:flex ml-[300px] mb-[-20px]  md:ml-0 md:mb-[-0px]" src="./img/logo.png" alt="">
+                        <img class="hidden md:block md:flex ml-[300px] mb-[-20px]  md:ml-0 md:mb-[-0px]"
+                            src="./img/logo.png" alt="">
                     </a>
                 </div>
                 <ul class="md:flex gap-[24px] hidden">
@@ -169,7 +185,8 @@
             </nav>
         </div>
     </header>
-    <div class=" block md:hidden bg-white z-10 fixed items-center w-full shadow-md flex pt-[28px] pb-[30px] pl-[24px] pr-[24px]">
+    <div
+        class=" block md:hidden bg-white z-10 fixed items-center w-full shadow-md flex pt-[28px] pb-[30px] pl-[24px] pr-[24px]">
         <button>
             <img class=" md:hidden" src="./img/hamburger-menu.png" alt="">
         </button>
@@ -180,7 +197,7 @@
             <button class="inline-block md:hidden">
                 <img src="./img/search-btn.png" alt="">
             </button>
-                <img class="md:hidden" src="./img/user.png" alt="">
+            <img class="md:hidden" src="./img/user.png" alt="">
 
         </div>
     </div>
@@ -258,10 +275,14 @@
             <div class="swiper-button-next"><img class="ml-[28px]" src="./img/slider-btn.png" alt=""></div>
             <div class="swiper-button-prev"><img class="ml-[20px]" src="./img/left-btn.png" alt=""></div>
             <div class="ml-[95px]">
-                <p class="block md:hidden text-[24px] max-w-[500px] mb-[36px]">Lorem ipsum dolor sit at, consectetur adipielit.
-                    Facilisi fermentum, dignissim pharetra. Aliquam Lorem ipsum dolor sit at  <b>Read More...</b></p>
-                    <button class="inline-block md:hidden pt-[12px] pb-[12px] pl-[32px] pr-[32px] border-[1px] border-[#0F756B] rounded-[5px] text-[#0F756B] w-[280px]"  >Exams</button>
-                    <button class="inline-block md:hidden pt-[12px] pb-[12px] pl-[32px] pr-[32px] border-[1px] w-[280px] bg-[#1B353D] rounded-[5px] text-white border-[#1B353D] ml-[17px]"  >Our Courses</button>
+                <p class="block md:hidden text-[24px] max-w-[500px] mb-[36px]">Lorem ipsum dolor sit at, consectetur
+                    adipielit.
+                    Facilisi fermentum, dignissim pharetra. Aliquam Lorem ipsum dolor sit at <b>Read More...</b></p>
+                <button
+                    class="inline-block md:hidden pt-[12px] pb-[12px] pl-[32px] pr-[32px] border-[1px] border-[#0F756B] rounded-[5px] text-[#0F756B] w-[280px]">Exams</button>
+                <button
+                    class="inline-block md:hidden pt-[12px] pb-[12px] pl-[32px] pr-[32px] border-[1px] w-[280px] bg-[#1B353D] rounded-[5px] text-white border-[#1B353D] ml-[17px]">Our
+                    Courses</button>
 
             </div>
         </div>
@@ -272,10 +293,12 @@
         </div>
         <div class="flex">
             <div class="">
-                <h4 class="hidden md:block max-w-[589px] mt-[70px] mb-[4px] font-[700]  text-[60px]">Take your career to the next level.
+                <h4 class="hidden md:block max-w-[589px] mt-[70px] mb-[4px] font-[700]  text-[60px]">Take your career to
+                    the next level.
                 </h4>
                 <h5 class="hidden md:block mb-[10px] text-[32px]">With indispensable courses</h5>
-                <p class="hidden md:block max-w-[534px] text-[24px]">Lorem ipsum dolor sit at, consectetur adipielit. Facilisi
+                <p class="hidden md:block max-w-[534px] text-[24px]">Lorem ipsum dolor sit at, consectetur adipielit.
+                    Facilisi
                     fermentum, dignissim pharetra. Aliquam
                     Lorem ipsum dolor sit at, consectetur adipielit. Facilisi fermentum, dignissim pharetra. Aliquam
                     Lorem ipsum dolor sit at, consectetur adipielit. Facilisi fermentum, dignissim pharetra. Aliquam</p>
@@ -312,67 +335,73 @@
             </div>
         </div>
     </section>
-    <section class="max-w-[1222px] mx-auto pl-[20px] pt-[132px] pr-[20px] mb-[150px] p-[38px]" >
+    <section class="max-w-[1222px] mx-auto pl-[20px] pt-[132px] pr-[20px] mb-[150px] p-[38px]">
         <div class="text-center">
             <h3 class="mb-[48px] font-[700] md:mb-[185px] text-[60px]">What we offer</h3>
-        </div> 
+        </div>
         <div class="flex-col md:flex-row flex">
             <div class="">
                 <h4 class="block md:hidden mb-[23px] text-[#0F756B] font-[800] text-[48px]">Online Courses</h4>
-                <h5 class="block md:hidden mb-[16px] text-[48px] text-gray-600">Our Course are the best <br> among others</h5>
-                <img class=" mb-[27px] md:mb-0 ml-[150px] md:ml-0 w-[389px]  md:w-[589px] md:max-w-[826px] h-[392px] md:h-[551px] rounded-[10px]" src="./img/women.png" alt="">
+                <h5 class="block md:hidden mb-[16px] text-[48px] text-gray-600">Our Course are the best <br> among
+                    others</h5>
+                <img class=" mb-[27px] md:mb-0 ml-[150px] md:ml-0 w-[389px]  md:w-[589px] md:max-w-[826px] h-[392px] md:h-[551px] rounded-[10px]"
+                    src="./img/women.png" alt="">
             </div>
             <div class="ml-[109px]">
                 <h4 class="hidden md:block mb-[23px] text-[#0F756B] font-[800] text-[48px]">Online Courses</h4>
-                <h5 class="hidden md:block mb-[16px] text-[48px] text-gray-600">Our Course are the <br> best among others</h5>
-                <p class="max-w-[900px] mr-[100px] md:mr-0 md:max-w-[432px] mb-[40px] text-[#333] text-[24px] md:text-[24px]">Lorem ipsum dolor sit at, consectetur
+                <h5 class="hidden md:block mb-[16px] text-[48px] text-gray-600">Our Course are the <br> best among
+                    others</h5>
+                <p
+                    class="max-w-[900px] mr-[100px] md:mr-0 md:max-w-[432px] mb-[40px] text-[#333] text-[24px] md:text-[24px]">
+                    Lorem ipsum dolor sit at, consectetur
                     adipielit. Facilisi fermentum, dignissim pharetra. Aliquam
                     Lorem ipsum dolor sit at, consectetur adipielit. Facilisi fermentum, dignissim pharetra.
                     Aliquam</p>
-                <button class="ml-[300px] md:ml-0 pt-[12px] pl-[24px] pb-[12px] border-2 rounded-[5px] border-[#1B353D] pr-[24px]">Explore
+                <button
+                    class="ml-[300px] md:ml-0 pt-[12px] pl-[24px] pb-[12px] border-2 rounded-[5px] border-[#1B353D] pr-[24px]">Explore
                     our courses</button>
             </div>
         </div>
     </section>
-    <section class="max-w-[1222px] mx-auto pl-[20px] pt-[132px] pr-[20px] mb-[150px] p-[38px]" hidden>
+    <section class="max-w-[1222px] mx-auto pl-[20px] pt-[132px] pr-[20px] mb-[150px] p-[38px]">
         <div class="text-center">
             <h2 class="mb-[100px] font-[700] text-[60px]">Trending Courses</h2>
         </div>
-        <div class="swiper mySwiper1 mb-[200px]">
+        <div class="swiper mySwiper1  mb-0 md:mb-[200px]">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <div class="swiper-slide w-[100%]">
                     <h5 class="absolute ml-[-80px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">Game <br>
                         Development</h5><img class="rounded-[10px]" src="./img/sweper1.png" alt="">
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide w-[100%]">
                     <h5 class="absolute ml-[-110px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">Marketing
                         <br> Strategy
                     </h5><img class="rounded-[10px]" src="./img/sweper2.png" alt="">
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide w-[100%]">
                     <h5 class="absolute ml-[-80px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">Data Analysis
                         <br> With Python
                     </h5><img class="rounded-[10px]" src="./img/sweper3.png" alt="">
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide w-[100%]">
                     <h5 class="absolute ml-[-80px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">Advanced <br>
                         UX Designs</h5><img class="rounded-[10px]" src="./img/sweper4.png" alt="">
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide w-[100%]">
                     <h5 class="absolute ml-[-80px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">Game <br>
                         Development</h5><img class="rounded-[10px]" src="./img/sweper1.png" alt="">
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide w-[100%]">
                     <h5 class="absolute ml-[-100px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">Marketing
                         <br> Strategy
                     </h5><img class="rounded-[10px]" src="./img/sweper2.png" alt="">
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide w-[100%]">
                     <h5 class="absolute ml-[-80px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">Data Analysis
                         <br> With
                     </h5><img class="rounded-[10px]" src="./img/sweper3.png" alt="">
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide w-[100%]">
                     <h5 class="absolute ml-[-80px] mb-[10px] mt-[230px] text-[26px] font-[500] text-white">Advanced <br>
                         UX Designs</h5><img class="rounded-[10px]" src="./img/sweper4.png" alt="">
                 </div>
@@ -380,24 +409,37 @@
             <div class="swiper-button-next1"><img class="" src="./img/slider-btn.png" alt=""></div>
             <div class="swiper-button-prev1"><img class="" src="./img/left-btn.png" alt=""></div>
         </div>
-        <div class="flex">
+        <div class="flex-col md:flex-row flex">
             <div class="">
                 <div class="">
                     <h4 class="mb-[23px] text-[#0F756B] font-[800] text-[48px]">Online Exams</h4>
-                    <h5 class="max-w-[536px] mb-[16px] mr-[71px] text-[48px] text-gray-600">Our exams prepare you for
+                    <h5 class="max-w-[536px] mb-[27px] md:mb-[16px] mr-[71px] text-[48px] text-gray-600">Our exams
+                        prepare you for
                         job opportunity</h5>
-                    <p class="max-w-[432px] mb-[40px] text-[#333] text-[24px]">Lorem ipsum dolor sit at, consectetur
+                    <p class="hidden md:block max-w-[432px] mb-[40px] text-[#333] text-[24px]">Lorem ipsum dolor sit at,
+                        consectetur
                         adipielit. Facilisi fermentum, dignissim pharetra. Aliquam Lorem ipsum dolor <br> sit at,
                         consectetur
                         adipielit. Facilisi fermentum, dignissim pharetra. <br> Aliquam</p>
 
                     <button
-                        class="pt-[12px] pl-[24px] pb-[12px] border-2 rounded-[5px] border-[#1B353D] pr-[24px]">Explore
+                        class=" hidden md:block pt-[12px] pl-[24px] pb-[12px] border-2 rounded-[5px] border-[#1B353D] pr-[24px]">Explore
                         our courses</button>
                 </div>
             </div>
             <div class="">
-                <img class="max-w-[826px] h-[551px] rounded-[10px]" src="./img/women2.png" alt="">
+                <img class="mb-[27px] md:mb-0 ml-[150px] md:ml-0 w-[389px]  md:w-[589px] md:max-w-[826px] h-[392px] md:h-[551px] rounded-[10px]"
+                    src="./img/women2.png" alt="">
+                <p
+                    class="block md:hidden max-w-[900px] ml-[100px] md:mr-0 md:max-w-[432px] mb-[40px] text-[#333] text-[24px] md:text-[24px]">
+                    Lorem ipsum dolor sit at, consectetur
+                    adipielit. Facilisi fermentum, dignissim pharetra. Aliquam Lorem ipsum dolor sit at,
+                    consectetur
+                    adipielit. Facilisi fermentum, dignissim pharetra. Aliquam</p>
+
+                <button
+                    class="ml-[500px] md:ml-0  block md:hidden pt-[12px] pl-[24px] pb-[12px] border-2 rounded-[5px] border-[#1B353D] pr-[24px]">Explore
+                    our courses</button>
             </div>
         </div>
     </section>
@@ -697,6 +739,22 @@
             navigation: {
                 nextEl: '.swiper-button-next1',
                 prevEl: '.swiper-button-prev1',
+            },
+            slidesPerView: 3,
+            paceBetween: 10,
+            breakpoints: {
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+                767: {
+                    slidesPerView: 3,
+                    spaceBetween: 0,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 50,
+                },
             },
             on: {
                 resize: function () {
