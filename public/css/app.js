@@ -5,11 +5,11 @@ let body = document.querySelector('body')
 
 
 btn.addEventListener('click' , function(){
-    nav.classList.remove("left-full")
-    nav.classList.add("left-0")
+    nav.classList.remove("right-full")
+    nav.classList.add("right-0")
 })
 
 x.addEventListener('click' , function(){
-    nav.classList.add("left-full")
-    nav.classList.remove("left-0")
+    nav.classList.add("right-full")
+    nav.classList.remove("right-0")
 })

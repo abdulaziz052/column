@@ -82,8 +82,63 @@
 
 <body>
     <header class="bg-[url('./img/fountain-bg.png')] object-cover bg-center bg-cover bg-no-repeat">
+        <div
+            class=" block md:hidden w-full bg-white z-10 fixed items-center w-full shadow-md flex pt-[28px] pb-[30px] pl-[24px] pr-[24px]"> 
+            <div class="flex justify-between">
+                <div class="flex gap-[12px]">
+                    <button id="btn">
+                        <img class=" md:hidden" src="./img/hamburger-menu.png" alt="">
+                    </button>
+                    <img src="./img/fountain-svg.svg" alt="">
+                </div>
+                <div class="ml-[550px]">
+                    <img src="./img/user-svg.svg" alt="">
+                </div>
+
+            </div>
+            <div id="nav" class="bg-white w-full h-screen  fixed top-0 right-full">
+                <nav class="md:hidden block">
+                    <button id="x" class="mb-[20px] text-[20px]">
+                        X
+                    </button>
+                    <ul class="flex flex-col gap-[15px]">
+                        <li class="">
+                            <a href="../src/birja.html" class="font-sans text-[24px] font-normal loading-normal">
+                                Home
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="../src/birja.html" class="font-sans text-[24px] font-normal loading-normal">
+                                Courses
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="../src/birja.html" class="font-sans text-[24px] font-normal loading-normal">
+                                Instuctors
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="../src/birja.html" class="font-sans text-[24px] font-normal loading-normal">
+                                Schedules
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="../src/birja.html" class="font-sans text-[24px] font-normal loading-normal">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+
+        <div class="pt-[19px] pb-[29px] pl-[24px] pr-[24px] w-full items-center flex block md:hidden fixed ">
+        </div>
+        </div>
+        </div>
         <div class="max-w-[1261px] mx-auto pl-[20px] pr-[20px] pt-[26px] mb-[90px]">
-            <nav class="flex items-center justify-between">
+            <nav class="hidden md:flex items-center justify-between">
                 <div class="">
                     <a href="#">
                         <img src="./img/fountain-logo.png" alt="">
@@ -117,10 +172,11 @@
             <button class="w-[152px] pt-[20px] pb-[20px] bg-[#FF6F28] rounded-[5px]"><a class="text-white" href="">Get
                     Started</a></button>
         </div>
+
     </header>
     <section class="max-w-[1261px] mx-auto pl-[20px] pr-[20px]  ">
         <div
-            class="w-[969px] h-[136px] bg-white ml-[100px] mb-[121px] pt-[38px] pb-[38px] rounded-[10px] shadow-md mt-[-70px]">
+            class="hidden md:block w-[969px] h-[136px] bg-white ml-[100px] mb-[121px] pt-[38px] pb-[38px] rounded-[10px] shadow-md mt-[-70px]">
             <div class="flex mx-auto gap-[24px] justify-center items-center">
                 <img src="./img/sms.png" alt="">
                 <p class="text-[24px] font-[400]">Live chat</p>
@@ -130,7 +186,23 @@
                 <p class="text-[24px] font-[400]">Competition</p>
             </div>
         </div>
-    
+        <div class="block md:hidden mt-[48px]">
+            <div class="ml-[100px] grid grid-cols-2 flex items-center">
+                <div class="flex items-center gap-[16px] " >
+                    <img class="w-[60px]" src="./img/iconcha.png" alt="">
+                    <p class="text-[24px] font-[400]">Live chat</p>
+                </div>
+                <div class="mb-[32px] mt-[30px] gap-[16px]  flex items-center" >
+                    <img src="./img/hands.png" alt="">
+                    <p class="text-[24px] font-[400]">Examination</p>
+                </div>
+                <div class="ml-[100px] mb-[80px] gap-[16px]  flex items-center" >
+                    <img src="./img/users.png" alt="">
+                    <p class="text-[24px] font-[400]">Competition</p>
+                </div>
+            </div>
+        </div>
+
         <div class="text-center">
             <h2 class="text-[48px] font-[600] mb-[48px]">Top cartegories</h2>
         </div>
@@ -140,28 +212,28 @@
         <div class="swiper mySwiper1 mb-[200px]">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img class="" src="./img/marketing.png" alt="">
+                    <img class="w-full" src="./img/marketing.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img class="" src="./img/design.png" alt="">
+                    <img class="w-full" src="./img/design.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img class="" src="./img/programming.png" alt="">
+                    <img class="w-full" src="./img/programming.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img class="" src="./img/technology.png" alt="">
+                    <img class="w-full" src="./img/technology2.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img class="" src="./img/marketing.png" alt="">
+                    <img class="w-full" src="./img/marketing.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img class="" src="./img/design.png" alt="">
+                    <img class="w-full" src="./img/design.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img class="" src="./img/programming.png" alt="">
+                    <img class="w-full" src="./img/programming.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img class="" src="./img/technology.png" alt="">
+                    <img class="w-full" src="./img/technology2.png" alt="">
                 </div>
             </div>
             <div class="swiper-button-next1"><img class="" src="./img/slider-btn.png" alt=""></div>
@@ -170,7 +242,7 @@
 
 
     </section>
-    <div class="bg-[url('./img/bg-fountain.png')] bg-cover">
+    <div class="bg-[url('./img/bg-fountain.png')] bg-cover" hidden>
         <section class="max-w-[1261px] mx-auto pl-[20px] pr-[20px] pt-[119px] pb-[54px]">
             <div class="flex">
                 <div class="">
@@ -199,7 +271,7 @@
             </div>
         </section>
     </div>
-    <section class="max-w-[1261px] mx-auto pl-[20px] pr-[20px] pt-[100px] pb-[112px]">
+    <section class="max-w-[1261px] mx-auto pl-[20px] pr-[20px] pt-[100px] pb-[112px]" hidden>
         <div class="text-center">
             <h2 class="text-[48px] font-[600]">Explore Our <br> Popular Course</h2>
         </div>
@@ -328,7 +400,7 @@
             </div>
         </div>
     </section>
-    <div class="bg-[url('./img/bg-fountain.png')] bg-cover ">
+    <div class="bg-[url('./img/bg-fountain.png')] bg-cover" hidden>
         <section class="max-w-[1261px] mx-auto pl-[20px] pr-[20px] pt-[119px] pb-[54px]">
             <div class="flex">
                 <div class="mr-[109px]">
@@ -358,7 +430,7 @@
         </section>
     </div>
 
-    <section class="max-w-[1261px] mx-auto pl-[20px] pr-[20px] pt-[100px] pb-[64px]">
+    <section class="max-w-[1261px] mx-auto pl-[20px] pr-[20px] pt-[100px] pb-[64px]" hidden>
         <div class="text-center">
             <h2 class="text-[48px] font-[600] mb-[48px]">Popular examination</h2>
         </div>
@@ -425,7 +497,7 @@
         </div>
     </section>
 
-    <div class="bg-[url('./img/bg-fountain.png')] bg-cover">
+    <div class="bg-[url('./img/bg-fountain.png')] bg-cover" hidden>
         <section class="max-w-[1261px] mx-auto pl-[20px] pr-[20px] pt-[100px] pb-[64px]">
             <div class="flex">
                 <div class="">
@@ -473,7 +545,7 @@
             </div>
         </section>
     </div>
-    <section class="max-w-[1261px] mx-auto pl-[20px] pr-[20px] pt-[100px] pb-[64px]">
+    <section class="max-w-[1261px] mx-auto pl-[20px] pr-[20px] pt-[100px] pb-[64px]" hidden>
         <div class="text-center">
             <h2 class="text-[48px] font-[600] mb-[48px]">Top cartegories</h2>
         </div>
@@ -511,7 +583,7 @@
             <div class="swiper-button-prev1"><img class="" src="./img/left-btn.png" alt=""></div>
         </div>
     </section>
-    <div class="bg-[url('./img/bg-fountain.png')] bg-cover ">
+    <div class="bg-[url('./img/bg-fountain.png')] bg-cover" hidden>
 
         <section class="max-w-[1261px] mx-auto pl-[20px] pr-[20px] pt-[119px] pb-[54px]">
             <div class="flex">
@@ -543,7 +615,7 @@
             </div>
         </section>
     </div>
-    <section class="max-w-[1261px] mx-auto pl-[20px] pr-[20px] pt-[100px] pb-[64px]">
+    <section class="max-w-[1261px] mx-auto pl-[20px] pr-[20px] pt-[100px] pb-[64px]" hidden>
         <div class="text-center">
             <h2 class="text-[48px] font-[600] mb-[48px]">Recent Publications</h2>
         </div>
@@ -657,7 +729,7 @@
 
 
 
-    <div class="bg-[#000]">
+    <div class="bg-[#000]" hidden>
         <section class="max-w-[1222px] mx-auto pl-[20px] pt-[75px] pb-[29px]  pr-[20px] ">
             <div class="flex mb-[64px] justify-between">
                 <div>
@@ -711,7 +783,7 @@
     </div>
 
 
-
+    <script src="./app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
