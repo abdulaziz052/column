@@ -187,9 +187,43 @@
     </header>
     <div
         class=" block md:hidden bg-white z-10 fixed items-center w-full shadow-md flex pt-[28px] pb-[30px] pl-[24px] pr-[24px]">
-        <button>
+        <button id="btn">
             <img class=" md:hidden" src="./img/hamburger-menu.png" alt="">
         </button>
+        <div id="nav" class="bg-white w-full h-screen  fixed top-0 right-full">
+            <nav class="md:hidden block">
+              <button id="x" class="mb-[20px] text-[20px]">
+                X
+              </button>
+              <ul class="flex flex-col gap-[15px]">
+                <li class="">
+                  <a href="../src/birja.html" class="font-sans text-[24px] font-normal loading-normal">
+                    Home
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../src/birja.html" class="font-sans text-[24px] font-normal loading-normal">
+                    Courses
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../src/birja.html" class="font-sans text-[24px] font-normal loading-normal">
+                    Instuctors
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../src/birja.html" class="font-sans text-[24px] font-normal loading-normal">
+                    Schedules
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../src/birja.html" class="font-sans text-[24px] font-normal loading-normal">
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         <a class="absolute left-[40%] bottom-[20%]" href="">
             <img class="" src="./img/logo.png" alt="">
         </a>
@@ -771,7 +805,7 @@
 
 
 
-
+    <script src="./app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
