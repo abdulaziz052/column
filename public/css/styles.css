@@ -1422,6 +1422,9 @@ video {
 .uppercase {
   text-transform: uppercase;
 }
+.lowercase {
+  text-transform: lowercase;
+}
 .capitalize {
   text-transform: capitalize;
 }
@@ -1661,6 +1664,10 @@ video {
 
   .md\:text-\[60px\] {
     font-size: 60px;
+  }
+
+  .md\:normal-case {
+    text-transform: none;
   }
 
   .md\:text-white {
