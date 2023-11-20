@@ -999,6 +999,12 @@ video {
 .max-w-\[900px\] {
   max-width: 900px;
 }
+.max-w-\[\] {
+  max-width: ;
+}
+.max-w-\[392px\] {
+  max-width: 392px;
+}
 .flex-shrink {
   flex-shrink: 1;
 }
@@ -1586,6 +1592,10 @@ video {
     display: flex;
   }
 
+  .md\:grid {
+    display: grid;
+  }
+
   .md\:hidden {
     display: none;
   }
@@ -1632,6 +1642,10 @@ video {
 
   .md\:max-w-\[856px\] {
     max-width: 856px;
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:flex-row {
