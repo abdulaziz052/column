@@ -1304,6 +1304,12 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-\[\] {
+  background-color: ;
+}
+.bg-\[\#\] {
+  background-color: #;
+}
 .bg-\[url\(\'\.\/img\/bg-fountain\.png\'\)\] {
   background-image: url('./img/bg-fountain.png');
 }
