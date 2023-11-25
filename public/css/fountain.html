@@ -533,13 +533,14 @@
         </div>
     </section>
 
-    <div class="bg-[url('./img/bg-fountain.png')] bg-cover" hidden>
+    <div class="bg-[url('./img/bg-fountain.png')] bg-cover" >
         <section class="max-w-[1261px] mx-auto pl-[20px] pr-[20px] pt-[100px] pb-[64px]">
-            <div class="flex">
-                <div class="">
-                    <img src="./img/scholar.png" alt="">
+            <div class="md:flex-row flex-col flex">
+                <div class=" ml-[150px] md:ml-0">
+                    <img class="mb-[69px]" src="./img/scholar.png" alt="">
+                    <p class="ml-[100px] block md:hidden text-[32px] font-[600] capitalize">Enroll for a couse now</p>
                     <div
-                        class="w-[168px] pt-[16px]  pb-[16px] rounded-[10px] absolute top-[5890px] left-[500px]  h-[177px] bg-white text-center">
+                        class="w-[168px] pt-[16px]  pb-[16px] rounded-[10px] absolute top-[6700px] md:top-[5890px] left-[500px]  h-[177px] bg-white text-center">
                         <img class="mx-auto mb-[12px]" src="./img/case.png" alt="">
                         <p class="text-[18px] font-[400]"> <span
                                 class="text-[#F77E23] font-[600] text-[20px]">Increase</span> <br>
@@ -548,21 +549,21 @@
                     </div>
                 </div>
                 <div
-                    class="w-[604px] ml-[127px] rounded-[10px] bg-white shadow-md shadow-gray-400 pt-[37px]  pr-[39px] pb-[48px] ">
+                    class="w-[604px] ml-[80px]  md:ml-[127px] rounded-[10px]  bg-inherit md:bg-white shadow-[0] md:shadow-md shadow-gray-400 pt-[37px]  pr-[39px] pb-[48px] ">
                     <form action="" class="text-center">
-                        <h6 class=" ml-[40px] mb-[63px] text-[16px]">Registration to get notified about new competition
+                        <h6 class="hidden md:block  ml-[40px] mb-[63px] text-[16px]">Registration to get notified about new competition
                             and article we <br> publish.</h6>
                         <input placeholder="Full name" required
-                            class="w-[524px] ml-[40px] mb-[32px] pt-[19px] pb-[19px] pl-[17px]  border border-gray-300 rounded-[6px]"
+                            class="w-[580px] md:w-[524px] ml-[40px] mb-[32px] pt-[19px] pb-[19px] pl-[17px]  border border-gray-300 rounded-[6px]"
                             type="text">
                         <input placeholder="Email"
-                            class="w-[524px] ml-[40px] mb-[32px] pt-[19px] pb-[19px] pl-[17px]  border border-gray-300 rounded-[6px]"
+                            class="w-[580px] md:w-[524px] ml-[40px] mb-[32px] pt-[19px] pb-[19px] pl-[17px]  border border-gray-300 rounded-[6px]"
                             type="text">
                         <input placeholder="Phone number"
-                            class="w-[524px] mb-[32px] ml-[40px] pt-[19px] pb-[19px] pl-[17px]  border border-gray-300 rounded-[6px]"
+                            class="w-[580px] md:w-[524px] mb-[32px] ml-[40px] pt-[19px] pb-[19px] pl-[17px]  border border-gray-300 rounded-[6px]"
                             type="text">
                         <select placeholder="awwefadwqwe"
-                            class="w-[524px] mb-[82px] ml-[40px] pt-[19px] pb-[19px] pl-[17px]  border border-gray-300 rounded-[6px]"
+                            class="w-[580px] md:w-[524px] mb-[82px] ml-[40px] pt-[19px] pb-[19px] pl-[17px]  border border-gray-300 rounded-[6px]"
                             name="" id="">
 
                             <option value=""><img class="w-[24px]" src="./img/snow.png" alt="">List of courses goes here
@@ -574,7 +575,9 @@
                         </select>
                         <div class="text-right">
                             <button
-                                class=" pt-[16px] pl-[80px] pb-[16px] pr-[80px]  text-white border rounded-[5px] bg-[#F77E23]">Register</button>
+                                class=" hidden md:inline-block pt-[16px] pl-[80px] pb-[16px] pr-[80px]  text-white border rounded-[5px] bg-[#F77E23]">Register</button>
+                                <button
+                                class="ml-[35px] w-[580px] inline-block-block md:hidden pt-[16px] pl-[80px] pb-[16px] pr-[80px]  text-white border rounded-[5px] bg-[#F77E23]">Apply Now</button>
                         </div>
                     </form>
                 </div>

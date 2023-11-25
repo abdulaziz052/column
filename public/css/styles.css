@@ -533,6 +533,24 @@ video {
 .top-\[7500px\] {
   top: 7500px;
 }
+.top-\[\] {
+  top: ;
+}
+.top-\[700pc\] {
+  top: 700pc;
+}
+.top-\[7000px\] {
+  top: 7000px;
+}
+.top-\[6000px\] {
+  top: 6000px;
+}
+.top-\[6500px\] {
+  top: 6500px;
+}
+.top-\[6700px\] {
+  top: 6700px;
+}
 .z-10 {
   z-index: 10;
 }
@@ -792,6 +810,27 @@ video {
 .ml-\[200px\] {
   margin-left: 200px;
 }
+.ml-\[1000px\] {
+  margin-left: 1000px;
+}
+.ml-\[80px\] {
+  margin-left: 80px;
+}
+.ml-\[130px\] {
+  margin-left: 130px;
+}
+.ml-\[30px\] {
+  margin-left: 30px;
+}
+.ml-\[35px\] {
+  margin-left: 35px;
+}
+.mb-\[\] {
+  margin-bottom: ;
+}
+.mb-\[69px\] {
+  margin-bottom: 69px;
+}
 .block {
   display: block;
 }
@@ -920,6 +959,18 @@ video {
 }
 .w-full {
   width: 100%;
+}
+.w-\[4\] {
+  width: 4;
+}
+.w-\[380px\] {
+  width: 380px;
+}
+.w-\[580px\] {
+  width: 580px;
+}
+.w-\[\] {
+  width: ;
 }
 .max-w-\[1222px\] {
   max-width: 1222px;
@@ -1435,8 +1486,17 @@ video {
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
 .shadow-gray-400 {
   --tw-shadow-color: #9ca3af;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+.shadow-\[0\] {
+  --tw-shadow-color: 0;
   --tw-shadow: var(--tw-shadow-colored);
 }
 .outline-none {
@@ -1475,6 +1535,10 @@ video {
 
   .md\:top-\[4180px\] {
     top: 4180px;
+  }
+
+  .md\:top-\[5890px\] {
+    top: 5890px;
   }
 
   .md\:mb-0 {
@@ -1537,6 +1601,10 @@ video {
     margin-top: 0px;
   }
 
+  .md\:ml-\[127px\] {
+    margin-left: 127px;
+  }
+
   .md\:block {
     display: block;
   }
@@ -1589,6 +1657,10 @@ video {
     width: 100%;
   }
 
+  .md\:w-\[524px\] {
+    width: 524px;
+  }
+
   .md\:max-w-\[432px\] {
     max-width: 432px;
   }
@@ -1611,6 +1683,10 @@ video {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:flex-col {
+    flex-direction: column;
   }
 
   .md\:border-2 {
