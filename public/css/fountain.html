@@ -10,12 +10,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <style>
     .swiper-button-prev1 {
         position: relative;
-        top: -310px;
+        top: -210px;
         left: 10px;
         z-index: 1;
         border: 2px solid;
@@ -33,6 +36,10 @@
     }
 
     .swiper-button-prev {
+        position: relative;
+        top: -210px;
+        left: 10px;
+        z-index: 1;
         border: 2px solid;
         display: flex;
         width: 60px;
@@ -43,10 +50,16 @@
         flex-shrink: 0;
         border-radius: 300px;
         color: rgba(0, 0, 0, 0);
+        background: #F77E23;
+        backdrop-filter: blur(7.5px);
     }
 
     .swiper-button-next {
         border: 2px solid;
+        position: relative;
+        top: -150px;
+        right: -1100px;
+        z-index: 1;
         display: flex;
         width: 60px;
         height: 60px;
@@ -56,14 +69,15 @@
         flex-shrink: 0;
         border-radius: 300px;
         color: rgba(0, 0, 0, 0);
-        border: 2px solid #F77E23;
+        background: #F77E23;
+        backdrop-filter: blur(7.5px);
 
     }
 
     .swiper-button-next1 {
         border: 2px solid;
         position: relative;
-        top: -250px;
+        top: -150px;
         right: -1100px;
         z-index: 1;
         display: flex;
@@ -100,6 +114,25 @@
 
         }
 
+        .swiper-button-next {
+            display: none;
+            position: relative;
+            top: -250px;
+            right: -570px;
+            z-index: 1;
+
+
+        }
+
+        .swiper-button-prev {
+            display: none;
+            position: relative;
+            top: -250px;
+            right: -570px;
+            z-index: 1;
+
+
+        }
 
 
     }
@@ -109,46 +142,51 @@
     <header class="bg-[url('./img/fountain-bg.png')] object-cover bg-center bg-cover bg-no-repeat">
         <div
             class=" block md:hidden max-w-[767px] w-full bg-white z-10 fixed items-center w-full shadow-md flex pt-[28px] pb-[30px] pl-[24px] pr-[24px]">
-            <div class="flex justify-between">
+            <div class="w-full flex justify-between">
                 <div class="flex gap-[12px]">
                     <button id="btn">
                         <img class=" md:hidden" src="./img/hamburger-menu.png" alt="">
                     </button>
                     <img src="./img/fountain-svg.svg" alt="">
                 </div>
-                <div class="ml-[550px]">
-                    <img src="./img/user-svg.svg" alt="">
+                <div class="ml-auto">
+                    <img class="" src="./img/user-svg.svg" alt="">
                 </div>
 
             </div>
-            <div id="nav" class="bg-white w-full h-screen  fixed top-0 right-full">
-                <nav class="md:hidden block">
-                    <button id="x" class="mb-[20px] text-[20px]">
-                        X
+            <div id="nav" class="bg-orange-500 w-full h-screen  fixed top-0 right-full transition-all">
+                <nav class="md:hidden flex justify-center items-center h-full text-center">
+                    <button id="x" class="ml-auto inline-block mb-[20px] text-[20px] absolute top-8 left-8">
+                        <i class="fa-sharp fa-solid fa-xmark-large" style="color: #ffffff;">X</i>
                     </button>
-                    <ul class="flex flex-col gap-[15px]">
+                    <ul class="flex flex-col gap-[15px] justify-center">
                         <li class="">
-                            <a target="_blank" href="./index.html" class="font-sans text-[24px] font-normal loading-normal">
+                            <a target="_blank" href="./index.html"
+                                class="font-sans text-[24px] font-bold text-white  loading-normal">
                                 Home
                             </a>
                         </li>
                         <li class="">
-                            <a target="_blank" href="./index.html" class="font-sans text-[24px] font-normal loading-normal">
+                            <a target="_blank" href="./index.html"
+                                class="font-sans text-[24px] font-bold text-white  loading-normal">
                                 Courses
                             </a>
                         </li>
                         <li class="">
-                            <a target="_blank" href="./index.html" class="font-sans text-[24px] font-normal loading-normal">
+                            <a target="_blank" href="./index.html"
+                                class="font-sans text-[24px] font-bold text-white  loading-normal">
                                 Instuctors
                             </a>
                         </li>
                         <li class="">
-                            <a target="_blank" href="./index.html" class="font-sans text-[24px] font-normal loading-normal">
+                            <a target="_blank" href="./index.html"
+                                class="font-sans text-[24px] font-bold text-white  loading-normal">
                                 Schedules
                             </a>
                         </li>
                         <li class="">
-                            <a target="_blank" href="./index.html" class="font-sans text-[24px] font-normal loading-normal">
+                            <a target="_blank" href="./index.html"
+                                class="font-sans text-[24px] font-bold text-white  loading-normal">
                                 Contact Us
                             </a>
                         </li>
@@ -211,8 +249,8 @@
                 <p class="text-[24px] font-[400]">Competition</p>
             </div>
         </div>
-        <div class="block md:hidden mt-[48px]">
-            <div class="ml-[100px] grid grid-cols-2 flex items-center">
+        <div class="block md:hidden mx-auto mt-[48px]">
+            <div class="mx-auto grid grid-cols-1 flex items-center">
                 <div class="flex items-center gap-[16px] ">
                     <img class="w-[60px]" src="./img/iconcha.png" alt="">
                     <p class="text-[24px] font-[400]">Live chat</p>
@@ -221,7 +259,7 @@
                     <img src="./img/hands.png" alt="">
                     <p class="text-[24px] font-[400]">Examination</p>
                 </div>
-                <div class="ml-[100px] mb-[80px] gap-[16px]  flex items-center">
+                <div class=" mb-[80px] gap-[16px]  flex items-center">
                     <img src="./img/users.png" alt="">
                     <p class="text-[24px] font-[400]">Competition</p>
                 </div>
@@ -238,35 +276,51 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img class="w-full" src="./img/marketiing.png" alt="">
-                    <p class="text-white  text-[32px] font-[600] absolute pl-[24px] bottom-[10px]">marketing</p>
+                    <p
+                        class="text-white  text-[12px] md:text-[32px] font-[600] uppercase absolute pl-[24px] bottom-[10px]">
+                        marketing</p>
                 </div>
                 <div class="swiper-slide">
                     <img class="w-full" src="./img/chizmalar.png" alt="">
-                    <p class="text-white  text-[32px] font-[600] absolute pl-[24px] bottom-[10px]">marketing</p>
+                    <p
+                        class="text-white  text-[12px] md:text-[32px] font-[600] uppercase absolute pl-[24px] bottom-[10px]">
+                        marketing</p>
                 </div>
                 <div class="swiper-slide">
                     <img class="w-full" src="./img/noutbuuk.png" alt="">
-                    <p class="text-white  text-[32px] font-[600] absolute pl-[24px] bottom-[10px]">marketing</p>
+                    <p
+                        class="text-white  text-[12px] md:text-[32px] font-[600] uppercase absolute pl-[24px] bottom-[10px]">
+                        marketing</p>
                 </div>
                 <div class="swiper-slide">
-                 <img class="w-full h-[420px]" src="./img/technologiyyy.png" alt="">
-                 <p class="text-white  text-[32px] font-[600] absolute pl-[24px] bottom-[10px]">marketing</p>
+                    <img class="w-full h-[180px] md:h-[305px]" src="./img/technologiyyy.png" alt="">
+                    <p
+                        class="text-white  text-[12px] md:text-[32px] font-[600] uppercase absolute pl-[24px] bottom-[10px]">
+                        marketing</p>
                 </div>
                 <div class="swiper-slide">
                     <img class="w-full" src="./img/marketiing.png" alt="">
-                    <p class="text-white  text-[32px] font-[600] absolute pl-[24px] bottom-[10px]">marketing</p>
+                    <p
+                        class="text-white  text-[12px] md:text-[32px] font-[600] uppercase absolute pl-[24px] bottom-[10px]">
+                        marketing</p>
                 </div>
                 <div class="swiper-slide">
                     <img class="w-full" src="./img/chizmalar.png" alt="">
-                    <p class="text-white  text-[32px] font-[600] absolute pl-[24px] bottom-[10px]">marketing</p>
+                    <p
+                        class="text-white  text-[12px] md:text-[32px] font-[600] uppercase absolute pl-[24px] bottom-[10px]">
+                        marketing</p>
                 </div>
                 <div class="swiper-slide">
                     <img class="w-full" src="./img/noutbuuk.png" alt="">
-                    <p class="text-white  text-[32px] font-[600] absolute pl-[24px] bottom-[10px]">marketing</p>
+                    <p
+                        class="text-white  text-[12px] md:text-[32px] font-[600] uppercase absolute pl-[24px] bottom-[10px]">
+                        marketing</p>
                 </div>
                 <div class="swiper-slide">
-                    <img class="w-full h-[420px]" src="./img/technologiyyy.png" alt="">
-                    <p class="text-white  text-[32px] font-[600] absolute pl-[24px] bottom-[10px]">marketing</p>
+                    <img class="w-full  h-[180px] md:h-[305px]" src="./img/technologiyyy.png" alt="">
+                    <p
+                        class="text-white  text-[12px] md:text-[32px] font-[600] uppercase absolute pl-[24px] bottom-[10px]">
+                        marketing</p>
 
                 </div>
             </div>
@@ -279,8 +333,8 @@
     <div class="bg-[url('./img/bg-fountain.png')] bg-cover">
         <section class="max-w-[1261px] mx-auto pl-[20px] pr-[20px] pt-[119px] pb-[54px]">
             <div class=" md:flex">
-                <div class="relative ml-[150px] mb-[48px] md:mb-0 md:ml-0">
-                    <img class="max-w-[826px] h-[551px] rounded-[10px]" src="./img/women-glasses.png" alt="">
+                <div class="relative mx-auto mb-[48px] md:mb-0 md:ml-0">
+                    <img class="max-w-[826px] w-full h-[551px] rounded-[10px]" src="./img/women-glasses.png" alt="">
                     <div
                         class="w-[168px] pt-[16px] pb-[16px] rounded-[10px] absolute bottom-[70px] right-[70px] md:right-[-30px]  h-[210px] bg-white text-center">
                         <img class="mx-auto mb-[12px]" src="./img/user-small.png" alt="">
@@ -289,11 +343,11 @@
                         <img class="mx-auto" src="./img/many-users.png" alt="">
                     </div>
                 </div>
-                <div class="ml-[109px] text-center md:text-left">
+                <div class="mx-auto text-center md:text-left">
                     <h4 class="mb-[23px] text-[#000] font-[800] text-[48px]">We are <span
                             class="text-[#F77E23]">Experts</span> <br>
                         Learning Institution</h4>
-                    <p class="ml-[70px] md:ml-0 max-w-[432px] mb-[40px] text-[#333] text-[24px]">Lorem ipsum dolor sit
+                    <p class=" md:ml-0 max-w-[432px] mb-[40px] text-[#333] text-[24px]">Lorem ipsum dolor sit
                         amet, consectetur
                         adipiscing elit. Sit elit, bibendum volutpat platea mi, adipiscing eget magna. Eu nulla ut urna
                         venenatis velit et tincidunt. Id vitae velit </p>
@@ -308,7 +362,7 @@
     </div>
     <section class="max-w-[1261px] mx-auto pl-[20px] pr-[20px] pt-[100px] pb-[112px]">
         <div class="text-center">
-            <h2 class="text-[48px] font-[600]">Explore Our <br> Popular Course</h2>
+            <h2 class="text-[48px] mb-[24px] font-[600]">Explore Our <br> Popular Course</h2>
         </div>
         <div class="text-right">
             <select class="text-white pt-[8px] mb-[65px] pb-[8px] pl-[16px]  bg-[#F77E23] rounded-[50px] " name=""
@@ -319,9 +373,9 @@
                 <option value="">Expensive</option>
             </select>
         </div>
-        <div class=" grid grid-cols-2 md:flex md:grid md:grid-cols-3 gap-[32px]">
+        <div class=" grid grid-cols-1 md:flex md:grid md:grid-cols-3 gap-[32px]">
             <div class="shadow-md  rounded-[10px] bg-[#FFF]">
-                <div class="max-w-[392px]">
+                <div class="max-w-[392px] w-full">
                     <img class="w-full rounded-t-lg" src="./img/courses-1.png" alt="">
                     <div class="flex pl-[24px] pr-[24px]  items-center">
                         <h4 class=" mt-[24px] text-[24px] font-[500] mb-[42px]">Learn Marketing from Top Instructors.
@@ -437,13 +491,14 @@
         </div>
     </section>
     <div class="bg-[url('./img/bg-fountain.png')] bg-cover">
-        <section class="max-w-[1261px] mx-auto pl-[20px] pr-[20px] pt-[119px] pb-[54px]">
+        <section class="max-w-[1261px] w-full mx-auto pl-[20px] pr-[20px] pt-[119px] pb-[54px]">
             <div class=" md:flex">
-                <div class="mr-[109px]">
+                <div class="mx-auto">
                     <h4 class="hidden md:block mb-[23px] text-[#333] font-[800] text-[48px]">Our online <br> <span
                             class="text-[#F77E23]">examination</span> is <br> top-notch</h4>
 
-                    <p class="hidden md:block max-w-[432px] mb-[40px] text-[#333] text-[24px]">Prepare your self for
+                    <p class="hidden md:block max-w-[432px] w-full mb-[40px] text-[#333] text-[24px]">Prepare your self
+                        for
                         greater challenges
                         with our online examination. </p>
                     <button
@@ -452,8 +507,9 @@
 
 
                 </div>
-                <div class="mt-[-100px] relative ml-[160px]">
-                    <img class="max-w-[826px] h-[551px] rounded-[10px]" src="./img/women-without-glasses.png" alt="">
+                <div class="mt-[-100px] relative mx-auto">
+                    <img class="max-w-[826px] w-full h-[551px] rounded-[10px]" src="./img/women-without-glasses.png"
+                        alt="">
                     <div class="text-center">
                         <h4
                             class="block md:hidden max-w-[400px] md:max-w-[502px] mb-[23px] text-[#333] font-[800] text-[48px]">
@@ -469,7 +525,7 @@
 
                     </div>
                     <div
-                        class="w-[168px] pt-[16px]  pb-[16px] rounded-[10px] absolute bottom-[500px] md:bottom-[80px] left-[-55px] h-[177px] bg-white text-center">
+                        class="w-[168px] pt-[16px]  pb-[16px] rounded-[10px] absolute bottom-[500px] md:bottom-[80px] left-[30px] md:left-[-55px] h-[177px] bg-white text-center">
                         <img class="mx-auto mb-[12px]" src="./img/case.png" alt="">
                         <p class="text-[18px] font-[400]"> <span
                                 class="text-[#F77E23] font-[600] text-[20px]">Increase</span> <br>
@@ -491,50 +547,65 @@
         <div class="swiper mySwiper1 mb-[79px]">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <h5 class="absolute pl-[24px] pb-[17px]  mb-[10px] mt-[210px] text-[26px] font-[500] text-white">NATURE
+                    <h5
+                        class="absolute pl-[24px] pb-[17px]  mb-[10px] mt-[70px] md:mt-[120px] text-[12px] md:text-[26px] font-[500] text-white">
+                        NATURE
                         <br>
                         of Science
                     </h5><img class="rounded-[10px] " src="./img/sweper5.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <h5 class="absolute pl-[24px] pb-[17px]  mb-[10px] mt-[210px] text-[26px] font-[500] text-white">2022
+                    <h5
+                        class="absolute pl-[24px] pb-[17px]  mb-[10px] mt-[70px] md:mt-[120px] text-[12px] md:text-[26px] font-[500] text-white">
+                        2022
                         <br>
                         Astro Report
                     </h5><img class="rounded-[10px]" src="./img/sweper6.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <h5 class="absolute pl-[24px] pb-[17px]  mb-[10px] mt-[210px] text-[26px] font-[500] text-white">Data
+                    <h5
+                        class="absolute pl-[24px] pb-[17px]  mb-[10px] mt-[70px] md:mt-[120px] text-[12px] md:text-[26px] font-[500] text-white">
+                        Data
                         Analysis
                         <br> With Python
                     </h5><img class="rounded-[10px]" src="./img/sweper3.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <h5 class="absolute pl-[24px] pb-[17px]  mb-[10px] mt-[210px] text-[26px] font-[500] text-white">Advanced
+                    <h5
+                        class="absolute pl-[24px] pb-[17px]  mb-[10px] mt-[70px] md:mt-[120px] text-[12px] md:text-[26px] font-[500] text-white">
+                        Advanced
                         <br>
                         UX Designs
                     </h5><img class="rounded-[10px]" src="./img/sweper4.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <h5 class="absolute pl-[24px] pb-[17px]  mb-[10px] mt-[210px] text-[26px] font-[500] text-white">
-                        <h5 class="absolute pl-[24px] pb-[17px]  mb-[10px] mt-[230px] text-[26px] font-[500] text-white">
+                    <h5 class="absolute pl-[24px] pb-[17px]  mb-[10px] mt-[120px] text-[26px] font-[500] text-white">
+                        <h5
+                            class="absolute pl-[24px] pb-[17px]  mb-[10px] mt-[70px] md:mt-[120px] text-[12px] md:text-[26px] font-[500] text-white">
                             NATURE
                             <br> of Science
                         </h5><img class="rounded-[10px]" src="./img/sweper5.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <h5 class="absolute  pl-[24px] pb-[17px] mb-[[10x] mt-[210px] text-[26px] font-[500] text-white">2022
+                    <h5
+                        class="absolute  pl-[24px] pb-[17px] mb-[[10x] mt-[70px] md:mt-[120px] text-[12px] md:text-[26px] font-[500] text-white">
+                        2022
                         <br>
                         Astro Report
                     </h5><img class="rounded-[10px]" src="./img/sweper6.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <h5 class="absolute pl-[24px] pb-[17px] mb-[[10x] mt-[210px] text-[26px] font-[500] text-white">Data
+                    <h5
+                        class="absolute pl-[24px] pb-[17px] mb-[[10x] mt-[70px] md:mt-[120px] text-[12px] md:text-[26px] font-[500] text-white">
+                        Data
                         Analysis
                         <br> With
                     </h5><img class="rounded-[10px]" src="./img/sweper3.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <h5 class="absolute pl-[24px] pb-[17px] mb-[[10x] mt-[210px] text-[26px] font-[500] text-white">Advanced
+                    <h5
+                        class="absolute pl-[24px] pb-[17px] mb-[[10x] mt-[70px] md:mt-[120px] text-[12px] md:text-[26px] font-[500] text-white">
+                        Advanced
                         <br>
                         UX Designs
                     </h5><img class="rounded-[10px]" src="./img/sweper4.png" alt="">
@@ -551,11 +622,11 @@
     <div class="bg-[url('./img/bg-fountain.png')] bg-cover">
         <section class="max-w-[1261px] mx-auto pl-[20px] pr-[20px] pt-[100px] pb-[64px]">
             <div class="md:flex-row flex-col flex">
-                <div class=" ml-[150px] relative md:ml-0">
+                <div class=" mx-auto relative md:ml-0">
                     <img class="mb-[69px]" src="./img/scholar.png" alt="">
-                    <p class="ml-[100px] block md:hidden text-[32px] font-[600] capitalize">Enroll for a couse now</p>
+                    <p class="mx-auto block md:hidden text-[32px] font-[600] capitalize">Enroll for a couse now</p>
                     <div
-                        class="w-[168px] pt-[16px]  pb-[16px] rounded-[10px] absolute bottom-[250px] md:bottom-[200px] right-[70px] md:right-[-30px]  h-[177px] bg-white text-center">
+                        class="max-w-[168px] w-full pt-[16px]  pb-[16px] rounded-[10px] absolute bottom-[90px] md:bottom-[200px] right-[70px] md:right-[-30px]  h-[177px] bg-white text-center">
                         <img class="mx-auto mb-[12px]" src="./img/case.png" alt="">
                         <p class="text-[18px] font-[400]"> <span
                                 class="text-[#F77E23] font-[600] text-[20px]">Increase</span> <br>
@@ -564,22 +635,22 @@
                     </div>
                 </div>
                 <div
-                    class="w-[604px] mx-auto  md:ml-[127px] rounded-[10px]  bg-inherit md:bg-white shadow-[0] md:shadow-md shadow-gray-400 pt-[37px]  pr-[39px] pb-[48px] ">
-                    <form action="" class="text-center">
+                    class="max-w-[604px] w-full mx-auto  md:ml-[127px] rounded-[10px]  bg-inherit md:bg-white shadow-[0] md:shadow-md shadow-gray-400 pt-[37px]  pb-[48px] ">
+                    <form action="" class="text-center mx-auto">
                         <h6 class="hidden md:block  mb-[63px] text-[16px]">Registration to get notified about
                             new competition
                             and article we <br> publish.</h6>
                         <input placeholder="Full name" required
-                            class="max-w-[580px] w-full  md:max-w-[524px] ml-[40px] mb-[32px] pt-[19px] pb-[19px] pl-[17px]  border border-gray-300 rounded-[6px]"
+                            class="max-w-[580px] w-full  md:max-w-[524px]  mb-[32px] pt-[19px] pb-[19px] pl-[17px]  border border-gray-300 rounded-[6px]"
                             type="text">
-                        <input placeholder="Email"required
-                            class="max-w-[580px] w-full  md:max-w-[524px] ml-[40px] mb-[32px] pt-[19px] pb-[19px] pl-[17px]  border border-gray-300 rounded-[6px]"
+                        <input placeholder="Email" required
+                            class="max-w-[580px] w-full  md:max-w-[524px]  mb-[32px] pt-[19px] pb-[19px] pl-[17px]  border border-gray-300 rounded-[6px]"
                             type="email">
-                        <input placeholder="Phone number"required
-                            class="max-w-[580px] w-full  md:max-w-[524px] mb-[32px] ml-[40px] pt-[19px] pb-[19px] pl-[17px]  border border-gray-300 rounded-[6px]"
+                        <input placeholder="Phone number" required
+                            class="max-w-[580px] w-full  md:max-w-[524px] mb-[32px]  pt-[19px] pb-[19px] pl-[17px]  border border-gray-300 rounded-[6px]"
                             type="text">
-                        <select placeholder="awwefadwqwe"required
-                            class="max-w-[580px] w-full  md:max-w-[524px] mb-[82px] ml-[40px] pt-[19px] pb-[19px] pl-[17px]  border border-gray-300 rounded-[6px]"
+                        <select placeholder="awwefadwqwe" required
+                            class="max-w-[580px] w-full  md:max-w-[524px] mb-[82px]  pt-[19px] pb-[19px] pl-[17px]  border border-gray-300 rounded-[6px]"
                             name="" id="">
 
                             <option value=""><img class="w-[24px]" src="./img/snow.png" alt="">List of courses goes here
@@ -593,7 +664,7 @@
                             <button
                                 class=" hidden md:inline-block pt-[16px] pl-[80px] pb-[16px] pr-[80px]  text-white border rounded-[5px] bg-[#F77E23]">Register</button>
                             <button
-                                class="ml-[35px] w-[580px] inline-block-block md:hidden pt-[16px] pl-[80px] pb-[16px] pr-[80px]  text-white border rounded-[5px] bg-[#F77E23]">Apply
+                                class=" max-w-[580px] w-full  md:hidden pt-[16px] pl-[80px] pb-[16px] pr-[80px]  text-white border rounded-[5px] bg-[#F77E23]">Apply
                                 Now</button>
                         </div>
                     </form>
@@ -608,39 +679,55 @@
         <div class="text-right">
             <a class="text-[#F77E23] text-[24px] mb-[24px] inline-block font-[400]" href="">See all</a>
         </div>
-        <div class="swiper mySwiper1 ">
+        <div class="swiper mySwiper1">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img class="w-full" src="./img/marketiing.png" alt="">
-                    <p class="text-white  text-[32px] font-[600] absolute pl-[24px] bottom-[10px]">marketing</p>
+                    <p
+                        class="text-white  text-[12px] md:text-[32px] uppercase  font-[600] absolute pl-[24px] bottom-[10px]">
+                        marketing</p>
                 </div>
                 <div class="swiper-slide">
                     <img class="w-full" src="./img/chizmalar.png" alt="">
-                    <p class="text-white  text-[32px] font-[600] absolute pl-[24px] bottom-[10px]">marketing</p>
+                    <p
+                        class="text-white  text-[12px] md:text-[32px] uppercase  font-[600] absolute pl-[24px] bottom-[10px]">
+                        marketing</p>
                 </div>
                 <div class="swiper-slide">
                     <img class="w-full" src="./img/noutbuuk.png" alt="">
-                    <p class="text-white  text-[32px] font-[600] absolute pl-[24px] bottom-[10px]">marketing</p>
+                    <p
+                        class="text-white  text-[12px] md:text-[32px] uppercase  font-[600] absolute pl-[24px] bottom-[10px]">
+                        marketing</p>
                 </div>
                 <div class="swiper-slide">
-                 <img class="w-full h-[420px]" src="./img/technologiyyy.png" alt="">
-                 <p class="text-white  text-[32px] font-[600] absolute pl-[24px] bottom-[10px]">marketing</p>
+                    <img class="w-full h-[166px] md:h-[305px]" src="./img/technologiyyy.png" alt="">
+                    <p
+                        class="text-white  text-[12px] md:text-[32px]  uppercase font-[600] absolute pl-[24px] bottom-[10px]">
+                        marketing</p>
                 </div>
                 <div class="swiper-slide">
                     <img class="w-full" src="./img/marketiing.png" alt="">
-                    <p class="text-white  text-[32px] font-[600] absolute pl-[24px] bottom-[10px]">marketing</p>
+                    <p
+                        class="text-white text-[12px] md:text-[32px] uppercase  font-[600] absolute pl-[24px] bottom-[10px]">
+                        marketing</p>
                 </div>
                 <div class="swiper-slide">
                     <img class="w-full" src="./img/chizmalar.png" alt="">
-                    <p class="text-white  text-[32px] font-[600] absolute pl-[24px] bottom-[10px]">marketing</p>
+                    <p
+                        class="text-white  text-[12px] md:text-[32px] uppercase  font-[600] absolute pl-[24px] bottom-[10px]">
+                        marketing</p>
                 </div>
                 <div class="swiper-slide">
                     <img class="w-full" src="./img/noutbuuk.png" alt="">
-                    <p class="text-white  text-[32px] font-[600] absolute pl-[24px] bottom-[10px]">marketing</p>
+                    <p
+                        class="text-white  text-[12px] md:text-[32px] uppercase  font-[600] absolute pl-[24px] bottom-[10px]">
+                        marketing</p>
                 </div>
                 <div class="swiper-slide">
-                    <img class="w-full h-[100px] md:h-[420px]" src="./img/technologiyyy.png" alt="">
-                    <p class="text-white  text-[32px] font-[600] absolute pl-[24px] bottom-[10px]">marketing</p>
+                    <img class="w-full h-[166px] md:h-[305px]" src="./img/technologiyyy.png" alt="">
+                    <p
+                        class="text-white  text-[12px] md:text-[32px] uppercase  font-[600] absolute pl-[24px] bottom-[10px]">
+                        marketing</p>
 
                 </div>
             </div>
@@ -652,9 +739,9 @@
 
         <section class="max-w-[1261px] mx-auto pl-[20px] pr-[20px] pt-[119px] pb-[54px]">
             <div class="md:flex-row flex-col-reverse flex">
-                <div class="ml-[150px] md:ml-0 mr-[109px] text-center md:text-left">
+                <div class="mx-auto md:ml-0  text-center md:text-left">
                     <h4
-                        class="ml-[30px] md:ml-0 max-w-[400px] md:max-w-[564px] mb-[23px] text-[#333]  text-[48px] font-[700]">
+                        class="mt-[32px] mx-auto md:ml-0 max-w-[400px] md:max-w-[564px] mb-[23px] text-[#333]  text-[48px] font-[700]">
                         Get <span class=" text-[#F77E23] text-[52px] font-[700]">Publicstions</span> from best Aurtors
                         around <br> the Globe</h4>
 
@@ -665,10 +752,10 @@
 
 
                 </div>
-                <div class="ml-[80px] relative md:ml-0">
-                    <img class="max-w-[826px] h-[551px] rounded-[10px]" src="./img/big-book.png" alt="">
+                <div class="mx-auto relative  md:ml-0">
+                    <img class="max-w-[826px] w-full  rounded-[10px]" src="./img/big-book.png" alt="">
                     <div
-                        class="w-[168px] pt-[16px]  pb-[16px] rounded-[10px] absolute  bottom-[200px] left-[400px] md:left-0  h-[177px] bg-white text-center">
+                        class="w-[168px] pt-[16px]  pb-[16px] rounded-[10px] absolute bottom-[-10px]  md:bottom-[200px] left-[100px] md:left-0  h-[177px] bg-white text-center">
                         <img class="mx-auto mb-[12px]" src="./img/small-book.png" alt="">
                         <p class="text-[18px] font-[400]"> <span class="text-black font-[600] text-[20px]">Readers <br>
                                 are <br>
@@ -691,50 +778,64 @@
         <div class="swiper mySwiper1 mb-[75px]">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <h5 class="absolute pl-[24px]   mb-[10px] mt-[210px] text-[26px] font-[500] text-white">NATURE
+                    <h5
+                        class="absolute pl-[24px]   mb-[10px] mt-[70px] md:mt-[120px] text-[12px] md:text-[26px] font-[500] text-white">
+                        NATURE
                         <br>
                         of Science
                     </h5><img class="rounded-[10px]" src="./img/sweper5.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <h5 class="absolute pl-[24px]   mb-[10px] mt-[210px] text-[26px] font-[500] text-white">2022
+                    <h5
+                        class="absolute pl-[24px]   mb-[10px] mt-[70px] md:mt-[120px] text-[12px] md:text-[26px] font-[500] text-white">
+                        2022
                         <br>
                         Astro Report
                     </h5><img class="rounded-[10px]" src="./img/sweper6.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <h5 class="absolute pl-[24px]   mb-[10px] mt-[210px] text-[26px] font-[500] text-white">Data
+                    <h5
+                        class="absolute pl-[24px]   mb-[10px] mt-[70px] md:mt-[120px] text-[12px] md:text-[26px] font-[500] text-white">
+                        Data
                         Analysis
                         <br> With Python
                     </h5><img class="rounded-[10px]" src="./img/sweper3.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <h5 class="absolute pl-[24px]   mb-[10px] mt-[210px] text-[26px] font-[500] text-white">Advanced
+                    <h5
+                        class="absolute pl-[24px]   mb-[10px] mt-[70px] md:mt-[120px] text-[12px] md:text-[26px] font-[500] text-white">
+                        Advanced
                         <br>
                         UX Designs
                     </h5><img class="rounded-[10px]" src="./img/sweper4.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <h5 class="absolute  mb-[10px] mt-[230px] text-[26px] font-[500] text-white">
-                        <h5 class="absolute pl-[24px]   mb-[10px] mt-[210px] text-[26px] font-[500] text-white">
-                            NATURE
-                            <br> of Science
-                        </h5><img class="rounded-[10px]" src="./img/sweper5.png" alt="">
+                    <h5
+                        class="absolute pl-[24px]   mb-[10px] mt-[70px] md:mt-[120px] text-[12px] md:text-[26px] font-[500] text-white">
+                        NATURE
+                        <br> of Science
+                    </h5><img class="rounded-[10px]" src="./img/sweper5.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <h5 class="absolute pl-[24px]   mb-[10px] mt-[210px] text-[26px] font-[500] text-white">2022
+                    <h5
+                        class="absolute pl-[24px]   mb-[10px] mt-[70px] md:mt-[120px] text-[12px] md:text-[26px] font-[500] text-white">
+                        2022
                         <br>
                         Astro Report
                     </h5><img class="rounded-[10px]" src="./img/sweper6.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <h5 class="absolute pl-[24px]  mb-[10px] mt-[210px] text-[26px] font-[500] text-white">Data
+                    <h5
+                        class="absolute pl-[24px]  mb-[10px] mt-[70px] md:mt-[120px] text-[12px] md:text-[26px] font-[500] text-white">
+                        Data
                         Analysis
                         <br> With
                     </h5><img class="rounded-[10px]" src="./img/sweper3.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <h5 class="absolute pl-[24px]  mb-[10px] mt-[210px] text-[26px] font-[500] text-white">Advanced
+                    <h5
+                        class="absolute pl-[24px]  mb-[10px] mt-[70px] md:mt-[120px] text-[12px] md:text-[26px] font-[500] text-white">
+                        Advanced
                         <br>
                         UX Designs
                     </h5><img class="rounded-[10px]" src="./img/sweper4.png" alt="">
@@ -748,40 +849,39 @@
         </div>
         <div class="md:flex-row flex-col flex items-center">
             <div>
-                <p class="hidden md:block text-[48px] capitalize font-[700]">What our  <span
+                <p class="hidden md:block text-[48px] capitalize font-[700]">What our <span
                         class="text-[#F77E23] text-[48px] font-[700]">Students </span>say about us</p>
             </div>
             <div class="flex items-center md:hidden">
-                <p class="mr-[100px] text-[48px] capitalize font-[700]">What our <span
+                <p class="mr-auto text-[48px] capitalize font-[700]">What our <span
                         class="text-[#F77E23] text-[48px] font-[700]">Students<br></span> say about us</p>
 
-                <div class="flex gap-[48px] ">
-                    <button class="p-[15px] border-[1px] border-[#F77E23] rounded-[30px]"><img src="./img/l-s.png"
-                            alt=""></button>
-                    <button class="p-[15px] border-[1px] border-[#F77E23] rounded-[30px]"><img src="./img/l-s2.png"
-                            alt=""></button>
-                </div>
             </div>
 
-            <div class="flex">
-                <div class=" w-[283px]  md:w-[380px] ml-[100px] md:ml-[100px] shadow-[0]  md:shadow-md pt-[59px] rounded-[10px] pl-[14px] md:pl-[48px] pr-[14px] md:pr-[48px] pb-[11px] md:pb-[48px]">
-                    <div class="flex mb-[24px]">
-                        <img src="./img/last-sweper.png" alt="">
-                        <div class="ml-[16px]">
+            <div class="md:flex-row flex-col flex">
+                <div
+                    class="max-w-[480px] w-full  shadow-[0]  md:shadow-md pt-[59px] rounded-[10px] pl-[14px] md:pl-[48px] pr-[14px] md:pr-[48px] pb-[11px] md:pb-[48px]">
+                    <div class="flex gap-[16px] mb-[24px] items-start">
+                        <img class="max-w-[70px] w-full" src="./img/last-sweper.png" alt="">
+                        <div class="">
                             <h4 class="text-[20px] font-[700] text-[#000]">Mohh Jumah</h4>
                             <span class="text-[18px] font-[600] text-[#F77E23]">Senior Developer</span>
                         </div>
                     </div>
                     <div>
-                        <p class="hidden md:block  md:max-w-[400px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac
+                        <p class="hidden md:block  md:max-w-[380px]">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Consectetur ac
                             blandit nam massa massa
                             elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus. Interdum duis
                             imperdiet venenatis </p>
-                            <p class="block md:hidden max-w-[355px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac
-                                Lorem ipsum dolor sit amet, consectetur sfsg dfc adipiscing elit. Consectetur ac blandit nam massa massa  </p>
+                        <p class="block md:hidden max-w-[355px]">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Consectetur ac
+                            Lorem ipsum dolor sit amet, consectetur sfsg dfc adipiscing elit. Consectetur ac blandit nam
+                            massa massa </p>
                     </div>
                 </div>
-                <div class=" w-[380px] shadow-[0]  md:shadow-md ml-[50px] pt-[59px] rounded-[10px] pl-[14px] md:pl-[48px] pr-[14px] md:pr-[48px] pb-[11px] md:pb-[48px]">
+                <div
+                    class=" max-w-[380px] w-full shadow-[0]  md:shadow-md  pt-[59px] rounded-[10px] pl-[14px] md:pl-[48px] pr-[14px] md:pr-[48px] pb-[11px] md:pb-[48px]">
                     <div class="flex mb-[24px]">
                         <img src="./img/last-sweper2.png" alt="">
                         <div class="ml-[16px]">
@@ -790,19 +890,21 @@
                         </div>
                     </div>
                     <div>
-                        <p class="hidden md:block max-w-[400px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac
+                        <p class="hidden md:block max-w-[400px]">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Consectetur ac
                             blandit nam massa massa
                             elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus. Interdum duis
                             imperdiet venenatis </p>
-                            <p class="block md:hidden max-w-[255px]">
-                                Lorem ipsum dolor sit amet, consectetur sfsg dfc adipiscing elit. Consectetur ac blandit nam massa massa 
-                            </p>
+                        <p class="block md:hidden max-w-[255px]">
+                            Lorem ipsum dolor sit amet, consectetur sfsg dfc adipiscing elit. Consectetur ac blandit nam
+                            massa massa
+                        </p>
                     </div>
                 </div>
             </div>
-        
 
-            </div>
+
+        </div>
 
 
         <div class="hidden md:flex gap-[48px]">
@@ -815,7 +917,7 @@
 
 
 
-    <div class="bg-[#000]" >
+    <div class="bg-[#000]">
         <section class="hidden md:block max-w-[1000px] mx-auto pl-[20px] pt-[75px] pb-[29px]  pr-[20px] ">
             <div class="flex mb-[64px] justify-between">
                 <div>
@@ -827,10 +929,14 @@
                         expertise.
                     </p>
                     <div class="flex gap-[20px]">
-                        <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
-                        <a target="_blank" href="https://twitter.com/"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
-                        <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
-                        <a target="_blank" href="https://ru.linkedin.com/"><i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"
+                                style="color: #ffffff;"></i></a>
+                        <a target="_blank" href="https://twitter.com/"><i class="fa-brands fa-twitter"
+                                style="color: #ffffff;"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"
+                                style="color: #ffffff;"></i></a>
+                        <a target="_blank" href="https://ru.linkedin.com/"><i class="fa-brands fa-linkedin-in"
+                                style="color: #ffffff;"></i></a>
                     </div>
                 </div>
                 <div class="flex ">
@@ -856,8 +962,8 @@
             <div class="text-center">
                 <h6 class=" mb-[17px] text-white text-[24px] font-[400]">Subscribe to get latest updates</h6>
                 <form action="">
-                    <input class="w-[545px] mb-[63px] pl-[18px]  pt-[19px] pb-[19px]" placeholder="Your Email address" required
-                        type="email"><button
+                    <input class="max-w-[545px] w-full mb-[63px] pl-[18px]  pt-[19px] pb-[19px]"
+                        placeholder="Your Email address" required type="email"><button
                         class="w-[126px] pt-[19px] pb-[19px] text-white bg-[#F77E23]">Subscribe</button>
                 </form>
             </div>
@@ -871,8 +977,8 @@
             <div class=" mb-[33px]">
                 <h6 class=" mb-[17px] text-white text-[24px] font-[400]">Subscribe to get latest updates</h6>
                 <form action="">
-                    <input class="w-[450px] mb-[15px] md:mb-[63px] pl-[18px]  pt-[19px] pb-[19px]" placeholder="Your Email address" required
-                        type="email"><button
+                    <input class="max-w-[450px] w-full mb-[15px] md:mb-[63px] pl-[18px]  pt-[19px] pb-[19px]"
+                        placeholder="Your Email address" required type="email"><button
                         class="w-[160px] pt-[19px] pb-[19px] text-white bg-[#F77E23]">Subscribe</button>
                 </form>
             </div>
@@ -893,7 +999,7 @@
                     <a class="mb-[12px] inline-block text-[16px] font-[400] text-white" href="">Features</a><br>
                     <a class="text-[16px] font-[400] text-white" href="">Pricing</a>
                 </div>
-                
+
             </div>
             <div>
                 <a href="#">
@@ -901,10 +1007,14 @@
                 </a>
             </div>
             <div class="mb-[71px] flex gap-[20px]">
-                <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
-                <a target="_blank" href="https://twitter.com/"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
-                <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
-                <a target="_blank" href="https://ru.linkedin.com/"><i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i></a>
+                <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"
+                        style="color: #ffffff;"></i></a>
+                <a target="_blank" href="https://twitter.com/"><i class="fa-brands fa-twitter"
+                        style="color: #ffffff;"></i></a>
+                <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"
+                        style="color: #ffffff;"></i></a>
+                <a target="_blank" href="https://ru.linkedin.com/"><i class="fa-brands fa-linkedin-in"
+                        style="color: #ffffff;"></i></a>
             </div>
             <div class="">
                 <img class="mb-[12px]" src="./img/footer-img-svg.svg" alt="">
@@ -918,41 +1028,75 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
         var swiper = new Swiper('.mySwiper1', {
             slidesPerView: 4,
-            spaceBetween: 30,
+            spaceBetween: 20,
             direction: getDirection(),
             navigation: {
+
                 nextEl: '.swiper-button-next1',
                 prevEl: '.swiper-button-prev1',
 
             },
+            slidesPerView: 3,
+            paceBetween: 10,
+            breakpoints: {
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+                767: {
+                    slidesPerView: 3,
+                    spaceBetween: 0,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 50,
+                },
+            },
+
             on: {
                 resize: function () {
                     swiper.changeDirection(getDirection());
-                    
+
                 },
             },
+
         });
         var swiper = new Swiper('.mySwiper2', {
-            slidesPerView: 3,
+            slidesPerView: 4,
+            spaceBetween: 20,
             direction: getDirection(),
             navigation: {
+
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
 
             },
+            slidesPerView: 3,
+            paceBetween: 10,
+            breakpoints: {
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 0,
+                },
+                767: {
+                    slidesPerView: 3,
+                    spaceBetween: 0,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 50,
+                },
+            },
+
             on: {
                 resize: function () {
                     swiper.changeDirection(getDirection());
+
                 },
             },
+
         });
 
 
